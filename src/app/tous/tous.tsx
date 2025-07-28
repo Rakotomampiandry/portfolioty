@@ -33,8 +33,8 @@ import Link from "antd/es/typography/Link";
 import { useInView } from 'react-intersection-observer';
 import Navbar from "../navbar/nav";
 import Footer from "../footer/footer";
-import Modal from "antd/es/modal/Modal";
 import { Link as Linke } from "react-router-dom";
+import Modal from "antd/es/modal/Modal";
 
 const Section = ({ id, title, children, Icon }: {
   id: string;
