@@ -34,7 +34,7 @@ import { useInView } from 'react-intersection-observer';
 import Navbar from "../navbar/nav";
 import Footer from "../footer/footer";
 import { Link as Linke } from "react-router-dom";
-import Modal from "antd/es/modal/Modal";
+import Modal from "../modal/modal";
 
 const Section = ({ id, title, children, Icon }: {
   id: string;
@@ -451,7 +451,7 @@ const Tous = () => {
             </h1>
 
             <div className="grid grid-cols-1 space-y-5 mt-6 lg:flex lg:space-x-5" data-aos="fade-left">
-              <div className="bg-maintybe opacity-95 h-[330px] rounded-xl items-center justify-items-center lg:w-[300px] lg:mt-[15px]" ref={ref}>
+              <div className="bg-maintybe opacity-95 h-[330px] rounded-xl items-center justify-items-center lg:w-[300px] lg:mt-[15px] lg:items-center lg:justify-items-center" ref={ref}>
                 <h1 className="text-zinc-200 font-semibold pt-3 text-[18px]" data-aos="fade-left">Technologie React</h1>
                 <p className="text-zinc-300 mb-6" data-aos="fade-left">Coté frontend</p>
                 <RiReactjsLine className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" data-aos="fade-left" />
