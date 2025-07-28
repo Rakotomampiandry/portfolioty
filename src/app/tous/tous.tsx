@@ -189,7 +189,7 @@ const Tous = () => {
                   </div>
                 </a>
 
-                <a href="https://www.linkedin.com/in/mickael-rakotomampiandry" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/mickael-rakotomampiandry-888320312" target="_blank" rel="noopener noreferrer">
                   <div className="text-zinc-200 cursor-pointer text-[150%] mr-4" data-aos="fade-left">
                     <BsLinkedin className="hover:text-blue-400 transition" />
                     {/* -888320312 miampy anio chifre io re ts mande io lien io*/}

@@ -1,12 +1,7 @@
 
 import { Tooltip } from "antd";
 import { BiArrowBack } from "react-icons/bi";
-import { BsGithub } from "react-icons/bs";
-import { CgFigma } from "react-icons/cg";
-import { IoLogoPython } from "react-icons/io";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiNestjs, SiPostgresql, SiTailwindcss } from "react-icons/si";
-import { TbBrandLaravel, TbBrandNextjs } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 export default function Projet() {
