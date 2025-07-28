@@ -8,6 +8,7 @@ import { RiMenu4Line } from "react-icons/ri";
 import React, { useState } from 'react';
 import { Drawer, Button } from 'antd';
 import { Link } from 'react-scroll';
+import Dark from "../dark/dark";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -87,13 +88,18 @@ const Navbar = () => {
                 </ul>
 
                 {/* RÉSEAUX SOCIAUX (affichés en mobile aussi) */}
-                <div className="flex justify-center mt-8 space-x-6 text-2xl text-white">
+                {/* <div className="flex justify-center mt-8 space-x-6 text-2xl text-white">
                     <BsFacebook className="cursor-pointer hover:text-blue-500" />
                     <RiWhatsappFill className="cursor-pointer hover:text-green-500" />
                     <BsLinkedin className="cursor-pointer hover:text-blue-400" />
                     <MdEmail className="cursor-pointer hover:text-gray-100" />
                     <BsGithub className="cursor-pointer hover:text-zinc-400 transition"/>
+                </div> */}
+
+                <div className="justify-items-center mt-8">
+                    <MdDiamond className="text-[350px] text-maintykely opacity-20" /> 
                 </div>
+                
             </Drawer>
         </nav>
     );

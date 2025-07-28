@@ -31,6 +31,7 @@ export default {
         'bounce-z': 'slide-up-down 2s ease-in-out infinite'
       }
     },
+    darkMode: "media",
   },
   plugins: [],
 }
