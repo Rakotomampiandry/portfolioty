@@ -388,7 +388,7 @@ const Tous = () => {
             </div>
 
             {/* voir plus */}
-            <Linke to="/projet">
+            <Linke to="#">
               <div className="flex items-center text-zinc-200 border-b-[1px] hover:text-white hover:border-b-white transition float-right mt-[5%] cursor-pointer lg:mr-[15%]" data-aos="fade-left">
                 <span>Voir plus</span>
                 <BsArrowRight />
