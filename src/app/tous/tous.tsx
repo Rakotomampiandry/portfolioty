@@ -1,4 +1,4 @@
-import { MdDiamond } from "react-icons/md"; 
+import { MdDiamond } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 import { RiFileCodeFill, RiWhatsappFill } from "react-icons/ri";
@@ -31,29 +31,26 @@ import { Tooltip } from "antd";
 import { Typewriter } from 'react-simple-typewriter'
 import Link from "antd/es/typography/Link";
 import { useInView } from 'react-intersection-observer';
+
+import { Link as Linke } from "react-router-dom";
 import Navbar from "../navbar/nav";
 import Footer from "../footer/footer";
-import { Link as Linke } from "react-router-dom";
-import Modal from "../modal/modal";
 
-const Section = ({ id, title, children, Icon }: {
+const Section = ({ id, children, Icon, className = '', }: {
   id: string;
-  title: string;
   children?: React.ReactNode;
   Icon: React.ElementType;
+  className?: string;
 }) => (
-  <section id={id} className="relative min-h-screen flex flex-col justify-center bg-gray-100 px-4 py-20 text-center overflow-hidden lg:items-center">
-    {/* Background Icon */}
+  <section
+    id={id}
+    className={`relative min-h-screen flex flex-col justify-center px-4 py-20 text-center overflow-hidden lg:items-center ${className}`}
+  >
     <div className="absolute text-gray-300 opacity-10 text-[350px] pointer-events-none select-none justify-center">
       <Icon className="animate-bounce-y" />
     </div>
 
-    <h2 className="text-4xl font-bold mb-8 relative z-10">{title}</h2>
-
-    <div className="relative z-10">
-      {/* <Modal /> */}
-      {children}
-    </div>
+    <div className="relative z-10">{children}</div>
   </section>
 );
 
@@ -146,7 +143,7 @@ const Tous = () => {
       <Navbar />
       <div>
         {/* Section Accueil */}
-        <Section id="home" title="" Icon={BiCodeCurly}>
+        <Section id="home" Icon={BiCodeCurly}>
           <div className="">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-4 text-zinc-200" data-aos="fade-left">
@@ -170,7 +167,7 @@ const Tous = () => {
 
               <button className="bg-zinc-200 px-6 rounded-lg font-semibold hover:bg-slate-50 transition hover:scale-100 mt-[1%] mb-[7%]" data-aos="fade-left">
                 <Link
-                  href="/cv_micka.pdf"
+                  href="/cv_front.pdf"
                   download
                 >
                   <p className="text-black pt-4 lg:pt-5">Télécharger mon CV</p>
@@ -212,31 +209,36 @@ const Tous = () => {
               </div>
             </div>
           </div>
-
         </Section>
 
         {/* Section Projets */}
-        <Section id="projects" title="" Icon={TbBrandNextjs}>
+        <Section id="projects" Icon={TbBrandNextjs} className="lg:justify-items-center">
           <div className="">
-            <h1 className="text-white flex items-center gap-2" data-aos="fade-left">
+            <h1 className="text-white flex items-center gap-3 lg:ml-[10%]">
               <hr className="w-[20px] border-gray-400" />
               <span className="text-[25px] font-semibold">Projet</span>
             </h1>
 
-            {/* grid projet */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 space-y-4 items-start gap-6 lg:space-x-6">
-              <div className="mt-3 h-[100%] rounded-xl bg-maintybe opacity-90 lg:h-[480px]">
-                <div className="text-white mt-4 ml-[2%]" data-aos="fade-left">
-                  <img src="../images/Home.png" alt="webb" className="w-[98%] h-[280px] rounded-md mb-3" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-4 gap-x-4 lg:w-[70%] lg:mx-auto lg:mb-[-4%]">
+              <div className="mt-3 h-[100%] rounded-xl bg-maintybe opacity-90 lg:h-[85%]">
+                <div className="flex justify-between items-center text-white mt-[3%]" data-aos="fade-left">
+                  <p className="ml-[3%] font-semibold">Site e-commerce</p>
+                  <span className=" hover:text-zinc-300 mr-3 text-[18px] cursor-pointer" >
+                    <Tooltip title="Lien GitHub" placement="top">
+                      <BsGithub />
+                    </Tooltip>
+                  </span>
                 </div>
-                <div className="items-center justify-center text-white lg:w-[530px] mt-1 lg:mt-4" data-aos="fade-left">
-                  <div className="mb-3 mr-1">
-                    <h1 className="text-white text-[18px] ml-[-40%] font-semibold lg:ml-[-62%]">Mini site e-commerce</h1>
-                    <p className="text-justify ml-4 lg:text-ellipsis">Développement d'une application e-commerce compléte avec une interface utilisateur moderne et responsive.
+
+                <img src="../images/Home.png" alt="webb" className="mt-[4%] rounded-t-2xl lg:h-[55%] lg:w-full" data-aos="fade-left" />
+
+                <div className="items-center justify-center text-white">
+                  <div className="px-3 mt-3" data-aos="fade-left">
+                    <p className="text-justify text-[12px] mb-2">Développement d'une application e-commerce compléte avec une interface utilisateur moderne et responsive.
                       Projet mettant en pratique l'ensemble du cycle de developpement webb du design à la mise en production. C'est un projet personnel</p>
-                    <p className="ml-[-45%] font-semibold lg:ml-[-66%]"><span className="font-semibold">Rôle: </span>Developpeur fullstack</p>
+                    <p className="float-left text-[15px]"><span className="font-semibold">Rôle: </span>Developpeur fullstack</p><br />
                   </div>
-                  <div className=" text-zinc-400 flex items-center ml-3 cursor-pointer lg:justify-center" data-aos="fade-left">
+                  <div className=" text-zinc-400 justify-center flex items-center ml-3 cursor-pointer mt-3" data-aos="fade-left">
                     <Tooltip title="React" placement="bottom">
                       <RiReactjsLine className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
                     </Tooltip>
@@ -252,27 +254,30 @@ const Tous = () => {
                     <Tooltip title="Figma" placement="bottom">
                       <CgFigma className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
                     </Tooltip>
-                    <Tooltip title="Lien gitHub" placement="bottom">
-                      <BsGithub className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
-                    </Tooltip>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-4 h-[525px] rounded-xl bg-maintybe opacity-90 lg:h-[478px]" data-aos="fade-left">
-                <div className="text-white mt-4 ml-[2%]" data-aos="fade-left">
-                  <img src="../images/avo.png" alt="personnel" className="w-[98%] h-[280px] rounded-md mb-3 lg:h-[260px]" />
+              <div className="mt-3 h-[100%] rounded-xl bg-maintybe opacity-90 lg:h-[85%]">
+                <div className="flex items-center text-white mt-[3%] justify-between">
+                  <p className="ml-[2%] font-semibold" data-aos="fade-left">Gestion des tâches</p>
+                  <span className="hover:text-zinc-300 mr-3 text-[18px] cursor-pointer" >
+                    <Tooltip title="Lien GitHub" placement="top">
+                      <BsGithub />
+                    </Tooltip>
+                  </span>
                 </div>
-                <div className="w-full h-[280px] items-center justify-center text-white lg:w-[500px] mt-1 lg:mt-4">
-                  <div className="mb-2" data-aos="fade-left">
-                    <h1 className="text-white text-[18px] ml-[-11%] font-semibold lg:ml-[-42%]">Gestion des tâches du personnel</h1>
-                    <p className="text-justify ml-4">Gestion des tâches du personnel au sein du cyber Ny Avo, une application webb de gestion des tâches destinées à organiser
-                      et suivre les missions des employées au sein du cyber. L'objectif est d'améliorer l'efficacité et le transparence du travail
-                      en repartissant les tâches. Réalisé en binôme.
-                    </p>
-                    <p className="ml-[-18%] font-semibold lg:ml-[-45%]"><span className="font-semibold">Rôle: </span>Developpeur frontend | Designer UI/UX</p>
+
+                <img src="../images/avo.png" alt="webb" className="mt-[4%] rounded-t-2xl lg:h-[55%] lg:w-full" data-aos="fade-left" />
+
+                <div className="items-center justify-center text-white">
+                  <div className="px-3 mt-3">
+                    <p className="text-justify text-[12px] mb-2" data-aos="fade-left">Une application web de gestion des tâches destinées à organiser
+                      et suivre les missions des employées. L'objectif est d'améliorer l'efficacité et le transparence du travail
+                      en repartissant les tâches. Réalisé en binôme.</p>
+                    <p className="float-left text-[15px]"><span className="font-semibold">Rôle: </span>Developpeur frontend | Designer UI/UX</p><br />
                   </div>
-                  <div className=" text-zinc-400 flex items-center ml-3 cursor-pointer lg:justify-center" data-aos="fade-left">
+                  <div className=" text-zinc-400 flex items-center ml-3 cursor-pointer justify-center mt-3" data-aos="fade-left">
                     <Tooltip title="React" placement="bottom">
                       <RiReactjsLine className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
                     </Tooltip>
@@ -288,27 +293,31 @@ const Tous = () => {
                     <Tooltip title="Figma" placement="bottom">
                       <CgFigma className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
                     </Tooltip>
-                    <Tooltip title="Lien gitHub" placement="bottom">
-                      <BsGithub className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
-                    </Tooltip>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-3 h-[440px] rounded-xl bg-maintybe opacity-90 lg:h-[420px] lg:justify-center" data-aos="fade-left">
-                <div className="text-white mt-4 ml-[2%]" data-aos="fade-left">
-                  <img src="../images/logo.png" alt="labo" className="w-[98%] h-[200px] rounded-md " />
+              <div className="mt-3 h-[100%] rounded-xl bg-maintybe opacity-90 lg:mt-[-18%] lg:h-auto">
+                <div className="flex items-center text-white mt-[3%] justify-between">
+                  <p className="ml-[2%] font-semibold" data-aos="fade-left">Gestion de laboratoire</p>
+                  <span className="hover:text-zinc-300 mr-3 text-[18px] cursor-pointer" >
+                    <Tooltip title="Lien GitHub" placement="top">
+                      <BsGithub />
+                    </Tooltip>
+                  </span>
                 </div>
-                <div className="w-full h-[280px] items-center justify-center text-white lg:w-[500px] mt-1 lg:mt-4">
-                  <div className="mb-2" data-aos="fade-left">
-                    <h1 className="text-white text-[18px] ml-[-8%] font-semibold lg:ml-[-39%]">Gestion de laboratoire CHU F/tsoa</h1>
-                    <p className="text-justify ml-4">Projet rélisé en groupe de 4 personnes, visant à digitaliser la gestion du laboratoire du CHU Tambohobe Fianarantsoa. Il s'agit
-                      d'une application web permettant de centraliser les informations des patients, de suivre les analyses médicales et d'optimiser la communication
-                      entre les différents acteurs du laboratoire.
+
+                <img src="../images/logo.png" alt="webb" className="mt-[4%] rounded-t-2xl lg:w-full lg:h-[44%]" data-aos="fade-left" />
+
+                <div className="items-center justify-center text-white" data-aos="fade-left">
+                  <div className="px-3 mt-3">
+                    <p className="text-justify text-[12px] mb-2">Application web de gestion de laboratoire développée en équipe de 4,
+                      pour digitaliser le CHU Tambohobe à Fianarantsoa. Elle centralise les données patients,
+                      assure le suivi des analyses médicales et améliore la communication entre les acteurs du laboratoire.
                     </p>
-                    <p className="ml-[-18%] font-semibold lg:ml-[-45%]"><span className="font-semibold">Rôle: </span>Developpeur fullstack | Designer UI/UX</p>
+                    <p className="float-left text-[15px]"><span className="font-semibold">Rôle: </span>Developpeur fullstack | Designer UI/UX</p><br />
                   </div>
-                  <div className=" text-zinc-400 flex items-center ml-3 cursor-pointer lg:justify-center" data-aos="fade-left">
+                  <div className=" text-zinc-400 flex items-center ml-3 cursor-pointer justify-center mt-3" data-aos="fade-left">
                     <Tooltip title="Nextjs" placement="bottom">
                       <TbBrandNextjs className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
                     </Tooltip>
@@ -324,38 +333,40 @@ const Tous = () => {
                     <Tooltip title="Figma" placement="bottom">
                       <CgFigma className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
                     </Tooltip>
-                    <Tooltip title="Lien gitHub" placement="bottom">
-                      <BsGithub className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
-                    </Tooltip>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-3 h-[510px] rounded-xl bg-maintybe opacity-90 grid grid-cols-1 lg:h-[420px]">
-                <div className="text-white mt-4 ml-[2%]" data-aos="fade-left">
-                  <img
-                    src="../images/banck.png"
-                    alt="bank"
-                    className="block lg:hidden w-[98%] h-[280px] rounded-md mb-3"
-                  />
-
-                  {/* Image pour laptop et plus (lg+) */}
-                  <img
-                    src="../images/bancki.png"
-                    alt="bank"
-                    className="hidden lg:block w-[98%] h-[200px] rounded-md mb-3"
-                  />
-
+              <div className="mt-3 h-[100%] rounded-xl bg-maintybe opacity-90 lg:mt-[-18%] lg:h-auto">
+                <div className="flex items-center text-white mt-[3%] justify-between">
+                  <p className="ml-[2%] font-semibold" data-aos="fade-left">Dev HUb Acces Bank</p>
+                  <span className="hover:text-zinc-300 mr-3 text-[18px] cursor-pointer" >
+                    <Tooltip title="Lien GitHub" placement="top">
+                      <BsGithub />
+                    </Tooltip>
+                  </span>
                 </div>
-                <div className="w-full h-[280px] items-center justify-center text-white lg:w-[500px] mt-1 lg:mt-4" data-aos="fade-left">
-                  <div className="mb-5">
-                    <h1 className="text-white text-[18px] ml-[-40%] font-semibold lg:ml-[-60%]">Dev HUb Acces Banck</h1>
-                    <p className="text-justify ml-4">Participation au Dev HUb d'Access Bank au sein d'une équipe de 5 personnes. Réalisation d'une soution web de gestion d'achat.
-                      Projet développé dans le cadre d'un hackathon visant à digitaliser le processus d'achat en entreprise
-                    </p>
-                    <p className="ml-[-18%] font-semibold lg:ml-[-45%]"><span className="font-semibold">Rôle: </span>Developpeur frontend | Designer UI/UX</p>
+
+                <img
+                  src="../images/banck.png"
+                  alt="bank"
+                  className="block lg:hidden w-full mt-[4%] rounded-t-2xl mb-3" data-aos="fade-left"
+                />
+
+                {/* Image pour laptop et plus (lg+) */}
+                <img
+                  src="../images/bancki.png"
+                  alt="bank"
+                  className="hidden lg:block w-full h-[44%] mb-3 mt-[4%] rounded-t-2xl " data-aos="fade-left"
+                />
+
+                <div className="items-center justify-center text-white">
+                  <div className="px-3 mt-3" data-aos="fade-left">
+                    <p className="text-justify text-[12px] mb-2">Participation au Dev HUb d'Access Bank au sein d'une équipe de 5 personnes. Réalisation d'une soution web de gestion d'achat.
+                      Projet développé dans le cadre d'un hackathon visant à digitaliser le processus d'achat en entreprise</p>
+                    <p className="float-left text-[15px]"><span className="font-semibold">Rôle: </span>Developpeur frontend | Designer UI/UX</p><br />
                   </div>
-                  <div className=" text-zinc-400 flex items-center ml-3 cursor-pointer lg:justify-center" data-aos="fade-left">
+                  <div className=" text-zinc-400 flex items-center ml-3 cursor-pointer justify-center mt-3" data-aos="fade-left">
                     <Tooltip title="React" placement="bottom">
                       <RiReactjsLine className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
                     </Tooltip>
@@ -371,26 +382,23 @@ const Tous = () => {
                     <Tooltip title="Figma" placement="bottom">
                       <CgFigma className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
                     </Tooltip>
-                    <Tooltip title="Lien gitHub" placement="bottom">
-                      <BsGithub className="text-[400%] bg-maintykely p-1 px-3 rounded-md mr-2" />
-                    </Tooltip>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* voir plus */}
-            <Linke to="#">
-            <div className="flex items-center text-zinc-200 border-b-[1px] hover:text-white hover:border-b-white transition float-right mt-2 cursor-pointer" data-aos="fade-left">
-              <span>Voir plus</span>
-              <BsArrowRight />
-            </div>
+            <Linke to="/projet">
+              <div className="flex items-center text-zinc-200 border-b-[1px] hover:text-white hover:border-b-white transition float-right mt-[5%] cursor-pointer lg:mr-[15%]" data-aos="fade-left">
+                <span>Voir plus</span>
+                <BsArrowRight />
+              </div>
             </Linke>
           </div>
         </Section>
 
         {/* Section À propos */}
-        <Section id="about" title="" Icon={FaCode}>
+        <Section id="about" Icon={FaCode}>
           <div className="">
             <h1 className="text-white flex items-center gap-2 lg:content-center lg:ml-[9%]" data-aos="fade-right">
               <hr className="w-[20px] border-gray-400" />
@@ -416,7 +424,7 @@ const Tous = () => {
                 </p>
               </div>
 
-              <div className="mt-5">
+              <div className="mt-5 lg:ml-[3%]">
                 <h1 className="flex text-white text-[15px] font-semibold items-center lg:text-[18px]" data-aos="fade-right"><span>Mon univers tech </span> <TbCodeDots className="text-[26px] ml-1" /></h1>
                 <div className="grid grid-cols-2 space-y-4 lg:grid-cols-7 lg:space-x-3 " data-aos="fade-right">
                   <div className="flex text-zinc-200 text-[15px] items-center"><FaReact className="text-[30px] ml-1 mr-2 lg:text-[50px]" /><span>React</span></div>
@@ -443,42 +451,46 @@ const Tous = () => {
         </Section>
 
         {/* Section Contact */}
-        <Section id="contact" title="" Icon={TbBrandVscode}>
-          <div>
+        <Section id="contact" Icon={TbBrandVscode}>
+          <div className="mb-[40%] lg:mb-[-5%]">
             <h1 className="text-white flex items-center gap-2" data-aos="fade-up">
               <hr className="w-[20px] border-gray-400" />
               <span className="text-[25px] font-semibold">Technologie</span>
             </h1>
 
-            <div className="grid grid-cols-1 space-y-5 mt-6 lg:flex lg:space-x-5" data-aos="fade-up">
-              <div className="bg-maintybe opacity-95 h-[330px] rounded-xl items-center justify-items-center lg:w-[300px] lg:mt-[15px] lg:items-center lg:justify-items-center" ref={ref}>
+            <div className="grid grid-cols-1 gap-y-[4%] mt-6 lg:flex lg:space-x-5" data-aos="fade-up">
+              <div className="bg-maintybe opacity-95 h-[110%] rounded-xl items-center justify-items-center lg:w-[300px] lg:h-[56vh] lg:items-center lg:justify-items-center" ref={ref}>
                 <h1 className="text-zinc-200 font-semibold pt-3 text-[18px]" data-aos="fade-up">Technologie React</h1>
                 <p className="text-zinc-300 mb-6" data-aos="fade-up">Coté frontend</p>
-                <RiReactjsLine className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" data-aos="fade-up" />
-                <hr className="w-[80%] opacity-45" data-aos="fade-up" />
-                <div className="flex items-center space-x-8 space-y-2" data-aos="fade-up">
+                <div className="flex justify-center" data-aos="fade-up">
+                  <RiReactjsLine className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" />
+                </div>
+                <hr className="w-[80%] mx-auto" data-aos="fade-up" />
+                <div className="flex items-center justify-center space-x-8" data-aos="fade-up">
                   <div className="">
                     <p className="text-white font-semibold text-[30px]">{progress}%</p>
                     <p className="text-zinc-200"> de mon projet</p>
                   </div>
-                  <div className="h-[50px] w-[2px] bg-zinc-500 opacity-45"></div>
+                  <div className="h-[70px] w-[2px] bg-zinc-500 opacity-45"></div>
                   <div>
                     <p className="text-white font-semibold text-[30px]">{progress1}%</p>
                     <p className="text-zinc-200">en Typescript</p>
                   </div>
                 </div>
 
-                <button className="bg-zinc-50 rounded-lg w-[80%] h-[10%] text-[15px] mt-[10%] font-medium hover:bg-zinc-200 transition" data-aos="fade-up">
+                <button className="bg-zinc-50 rounded-lg w-[80%] h-[10%] text-[15px] mt-[8%] font-medium hover:bg-zinc-200 transition" data-aos="fade-up">
                   voir projet
                 </button>
               </div>
 
-              <div className="bg-maintybe opacity-95 h-[330px] rounded-xl items-center justify-items-center lg:w-[300px]" data-aos="fade-up" ref={ref}>
+              <div className="bg-maintybe opacity-95 rounded-xl items-center justify-items-center lg:w-[300px] lg:h-[56vh] h-[110%]" data-aos="fade-up" ref={ref}>
                 <h1 className="text-zinc-200 font-semibold pt-3 text-[18px]" data-aos="fade-up">Technologie Nextjs</h1>
                 <p className="text-zinc-300 mb-6" data-aos="fade-up">Coté frontend</p>
-                <TbBrandNextjs className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" data-aos="fade-up" />
-                <hr className="w-[80%] opacity-45 text-zinc-500" data-aos="fade-up" />
-                <div className="flex items-center space-x-8 space-y-2" data-aos="fade-up">
+                <div className="flex justify-center">
+                  <TbBrandNextjs className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" data-aos="fade-up" />
+                </div>
+                <hr className="w-[80%] mx-auto" data-aos="fade-up" />
+                <div className="flex items-center justify-center space-x-8" data-aos="fade-up">
                   <div className="">
                     <p className="text-white font-semibold text-[30px]">{progress2}%</p>
                     <p className="text-zinc-200"> de mon projet</p>
@@ -490,17 +502,19 @@ const Tous = () => {
                   </div>
                 </div>
 
-                <button className="bg-zinc-50 rounded-lg w-[80%] h-[10%] text-[15px] mt-[10%] font-medium hover:bg-zinc-200 transition" data-aos="fade-up">
+                <button className="bg-zinc-50 rounded-lg w-[80%] h-[10%] text-[15px] mt-[8%] font-medium hover:bg-zinc-200 transition" data-aos="fade-up">
                   voir projet
                 </button>
               </div>
 
-              <div className="bg-maintybe opacity-95 h-[330px] rounded-xl items-center justify-items-center lg:w-[300px]" data-aos="fade-up" ref={ref}>
+              <div className="bg-maintybe opacity-95 h-[110%] rounded-xl items-center justify-items-center lg:w-[300px] lg:h-[56vh]" data-aos="fade-up" ref={ref}>
                 <h1 className="text-zinc-200 font-semibold pt-3 text-[18px]" data-aos="fade-up">Technologie Nestjs</h1>
                 <p className="text-zinc-300 mb-6" data-aos="fade-up">Coté backend</p>
-                <SiNestjs className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" data-aos="fade-up" />
-                <hr className="w-[80%] opacity-45" data-aos="fade-up" />
-                <div className="flex items-center space-x-8 space-y-2" data-aos="fade-up">
+                <div className="flex justify-center">
+                    <SiNestjs className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" data-aos="fade-up" />
+                </div>
+                <hr className="w-[80%] mx-auto" data-aos="fade-up" />
+                <div className="flex items-center justify-center space-x-8" data-aos="fade-up">
                   <div className="">
                     <p className="text-white font-semibold text-[30px]">{progress4}%</p>
                     <p className="text-zinc-200"> de mon projet</p>
@@ -512,17 +526,20 @@ const Tous = () => {
                   </div>
                 </div>
 
-                <button className="bg-zinc-50 rounded-lg w-[80%] h-[10%] text-[15px] mt-[10%] font-medium hover:bg-zinc-200 transition" data-aos="fade-up">
+                <button className="bg-zinc-50 rounded-lg w-[80%] h-[10%] text-[15px] mt-[8%] font-medium hover:bg-zinc-200 transition" data-aos="fade-up">
                   voir projet
                 </button>
               </div>
 
-              <div className="bg-maintybe opacity-95 h-[330px] rounded-xl items-center justify-items-center lg:w-[300px]" data-aos="fade-up">
+              <div className="bg-maintybe opacity-95 h-[110%] rounded-xl items-center justify-items-center lg:w-[300px] lg:h-[56vh]" data-aos="fade-up">
                 <h1 className="text-zinc-200 font-semibold pt-3 text-[18px]" data-aos="fade-up">Autre Technologie</h1>
                 <p className="text-zinc-300 mb-6" data-aos="fade-up">Coté backend/frontend</p>
-                <RiFileCodeFill className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" />
-                <hr className="w-[80%] opacity-45" data-aos="fade-up" />
-                <div className="flex items-center space-x-8 space-y-2" data-aos="fade-up">
+                <div className="flex justify-center">
+                    <RiFileCodeFill className="text-[600%] bg-maintykely p-1 px-3 rounded-full mr-2 text-zinc-200 mb-8" />
+                </div>
+               
+                <hr className="w-[80%] mx-auto" data-aos="fade-up" />
+                <div className="flex items-center justify-center space-x-8" data-aos="fade-up">
                   <div className="">
                     <p className="text-white font-semibold text-[30px]">{progress5}%</p>
                     <p className="text-zinc-200"> de mon projet</p>
@@ -534,14 +551,14 @@ const Tous = () => {
                   </div>
                 </div>
 
-                <button className="bg-zinc-50 rounded-lg w-[80%] h-[10%] text-[15px] mt-[10%] font-medium hover:bg-zinc-200 transition" data-aos="fade-up">
+                <button className="bg-zinc-50 rounded-lg w-[80%] h-[10%] text-[15px] mt-[8%] font-medium hover:bg-zinc-200 transition" data-aos="fade-up">
                   voir projet
                 </button>
               </div>
             </div>
           </div>
         </Section>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
