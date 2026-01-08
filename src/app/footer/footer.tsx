@@ -1,76 +1,44 @@
-import { CgMail } from "react-icons/cg";
-import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
-import { RiWhatsappFill } from "react-icons/ri";
-import { SiGmail } from "react-icons/si";
+import { Modal, Form, Input, message, Button } from "antd";
 
 export default function Footer() {
   return (
-    <div className="w-full h-auto bg-maintybe pt-6 font-semibold px-4 text-center transition-colors duration-300">
-      <p className="text-[18px] text-zinc-50" data-aos="fade-down">
-        Intéressé par mon profil ? Parlons-en.
-      </p>
-      <p className="text-zinc-300 mt-1 text-[15px] font-normal" data-aos="fade-down">
-        Passionné par le développement web et le design UI/UX, je mets mes compétences au service de projets innovants et modernes.
-      </p>
-      <p className="mt-1 text-[15px] text-zinc-300 mb-[2%] lg:mb-[-1%] font-normal" data-aos="fade-down">
-        +261 34 89 846 04 / +261 33 35 618 97 &nbsp; | &nbsp;
-        rakotomampiandry@gmail.com
-      </p>
+    <footer  className="bg-gradient-to-r from-[#000000] to-[#0D0716] pt-[10%] md:pt-[5%]">
+      <div className="">
+        <p className="text-white font-bold text-[25px] text-center flex justify-center mb-[2%] lg:mb-[0.5%]">Intéressé par mon profil ? Parlons-en.</p>
+        <p className="text-white opacity-80 justify-center text-center px-[10%] text-[12px] md:text-[15px] lg:px-[28%]">Passionné par le développement web et le design UI/UX, je mets mes compétences au service de projets innovants et modernes.</p>
+        <div className="w-[15vh] h-[1px] bg-white mx-auto my-[7%] bg-gradient-to-r from-[#fff] to-[#9936AF] md:my-[3%] lg:my-[1%]"></div>
 
-      <button
-        className="bg-zinc-200 dark:bg-zinc-50 rounded-lg py-3 px-6 text-black text-[15px] mt-[2%] font-medium hover:bg-zinc-300 dark:hover:bg-zinc-200 transition mb-[2%]"
-      >
-        <div className="flex items-center justify-center">
-          <CgMail className="text-[25px]" />
-          <span className="ml-2">Laissez un message</span>
+        <p className="text-white font-bold text-center md:text-[22px] lg:text-[18px]">Rakotomampiandry@gmail.com</p>
+        <p className="text-white font-bold text-center mt-[1%] md:text-[22px] lg:text-[18px] lg:mt-0">+261 34 89 846 04</p>
+
+        <div className="mt-[7%] space-y-[4%] px-[12%] md:mt-[5%] md:space-y-[3%] md:px-[22%] lg:flex lg:space-x-3 lg:space-y-0 lg:justify-center lg:mt-[2%]">
+          <div className="p-[2px] rounded-2xl bg-gradient-to-r from-[#9936AF] to-[#fff]">
+            <input
+              type="email"
+              placeholder="exemple@gmail.com"
+              className="w-full rounded-2xl bg-[#0f0f0f] text-white px-4 py-2 focus:outline-none"
+            />
+          </div>
+
+          <div className="p-[2px] rounded-2xl bg-gradient-to-r from-[#fff] to-[#9936AF]">
+            <input
+              type="text"
+              placeholder="Votre message"
+              className="w-full rounded-2xl bg-[#0f0f0f] text-white px-4 py-2 focus:outline-none"
+            />
+          </div>
+
+          <div className="flex justify-center lg:block">
+            <Button className="bg-gradient-to-r from-[#000] to-[#9936AF] rounded-3xl text-white font-semibold w-[60%] py-5 lg:w-[100%] lg:rounded-2xl">
+              Envoyer
+            </Button>
+          </div>
         </div>
-      </button>
 
-      <div className="flex justify-center">
-        <a
-          href="https://www.facebook.com/micka.hasniaina"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="cursor-pointer text-[150%] ml-1 mr-4 text-zinc-200">
-            <BsFacebook className="hover:text-blue-500 transition" />
-          </div>
-        </a>
+        <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[15%] mb-[3%] rounded-xl md:mt-[5%] md:mb-[1%] md:w-[8vh] lg:mt-[3%]"></div>
 
-        <a
-          href="https://wa.me/+261348984604"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="cursor-pointer text-[170%] mr-4 text-zinc-200">
-            <RiWhatsappFill className="hover:text-green-500 transition" />
-          </div>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/mickael-rakotomampiandry-888320312"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="cursor-pointer text-[150%] mr-4 text-zinc-200">
-            <BsLinkedin className="hover:text-blue-400 transition" />
-          </div>
-        </a>
-
-        <a
-          href="mailto:rakotomampiandry@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="cursor-pointer text-[170%] mr-4 text-zinc-200">
-            <SiGmail className="hover:text-red-500 transition" />
-          </div>
-        </a>
+        <p className="text-[10px] text-center text-white">© 2025 Portfolio de Rakotomampiandry Mickael</p>
       </div>
-
-      <p className="text-zinc-400 text-[10px] mt-[2%] pb-[1%]">
-        © 2025 Portfolio de Micka Rakotomampiandry
-      </p>
-    </div>
+    </footer>
   );
 }

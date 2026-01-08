@@ -3,38 +3,16 @@
 @tailwind utilities;
 
 
-.active{
-    border-right: 3px solid red;
-}
-
 main{
     width: 100%;
     padding: 20px;
   }
 
-/* style menu */
-.custom-drawer .ant-drawer-body {
-  background-color: theme('colors.maintybe');/* exemple si maintybe = noir foncé */
-  color: white;
-}
-
-.custom-drawer .ant-drawer-header {
-  background-color: theme('colors.maintybe');/* exemple si maintybe = noir foncé */
-  color: white;
-}
-
-#home{
-    background-color: rgb(23, 22, 22);
-}
-
-#projects{
-    background-color: rgb(25, 25, 25);
-}
-
-#about{
-    background-color: rgb(23, 22, 22);
-}
-
-#contact{
-    background-color: rgb(25, 25, 25);
+/* Supprime le hover pour tous les boutons */
+.ant-btn:hover {
+  background-color: violet !important; /* ou la couleur que tu veux */
+  opacity: 0.5;
+  color: rgb(0, 0, 0) !important; /* supprime le changement de couleur */
+  border-color: rgb(255, 171, 255) !important; /* supprime le changement de bordure */
+  box-shadow: none !important; /* supprime l'ombre si présente */
 }
