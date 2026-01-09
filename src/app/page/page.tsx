@@ -186,7 +186,7 @@ export default function Page() {
         {/* Section À propos */}
         <Section id="about" className="bg-gradient-to-r from-[#000000] to-[#0D0716] grid place-content-start">
           <p className="text-white font-bold text-[20px] md:text-[25px] lg:text-[30px] lg:text-left md:text-left md:ml-[10%] lg:ml-[13%]">A propos<span className="bg-gradient-to-r from-[#ffff] to-[#9936AF] bg-clip-text text-transparent"> du Mickaël</span></p>
-          <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[5%] mb-[5%] rounded-xl md:mt-[4%] md:mb-[2%] md:mx-0 md:ml-[10%] lg:mx-0 lg:ml-[13%] lg:mt-[1%]"></div>
+          <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[3%] mb-[5%] rounded-xl md:mt-[4%] md:mb-[2%] md:mx-0 md:ml-[10%] lg:mx-0 lg:ml-[13%] lg:mt-[1%]"></div>
           <div className="">
             <div className=" lg:pr-[38%]">
               <p className="text-white opacity-90 text-justify text-[14px] px-[6%] md:text-[15px] md:px-[15%] lg:px-[20%] lg:pr-[25%]">Développeur web passionné par l’univers du digital et les technologies modernes. Mon parcours m’a permis d’acquérir une solide expérience dans la conception et le développement de solutions web performantes, alliant interfaces intuitives, architectures efficaces et respect des bonnes pratiques en matière d’accessibilité et de responsive design.</p>

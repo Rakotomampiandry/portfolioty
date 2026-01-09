@@ -38,7 +38,7 @@ export function CadreTech({Icon, Icon1, Icon2, Titre, divClassName, iconClassNam
   return(
     <div className="bg-[#171028] bg-opacity-60 w-full h-[25vh] rounded-xl border-t-2 border-t-violeta border-opacity-30 blur-[0.5px]" data-aos={animation}>
         <p className="text-white font-bold mt-[3%] float-left ml-[5%] text-[12px] md:text-[15px]">{Titre}</p>
-        <div className="w-[2vh] h-[2px] bg-white bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[6%] ml-[5%] rounded-xl md:mt-[8%] md:w-[4vh]"></div>
+        <div className="w-[4vh] h-[2px] bg-white bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[8%] ml-[5%] rounded-xl md:mt-[8%] md:w-[4vh]"></div>
 
         <div className="flex place-content-center  space-x-[5%] text-white text-[70px] blur-[1.5px] mt-[12%] md:text-[100px] md:mt-[10%]">
           {Icon && <Icon className={`${iconClassName} animate-float [animation-duration:2.5s]`}/>}
