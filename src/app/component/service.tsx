@@ -117,7 +117,7 @@ export function ServiceP() {
                     className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 />
 
-                <div className="absolute mt-[-45%] ml-[40%] py-[1vh] w-[55%]
+                <div className="absolute mt-[-40%] ml-[40%] py-[1vh] w-[55%]
                                       bg-black/30 backdrop-blur-xl
                                     text-white font-bold rounded-lg text-center
                                       border-t border-white/20 text-[12px]
@@ -177,10 +177,10 @@ export function ServiceP() {
             </div>
 
             <div className="bg-black text-white px-[5%] py-[10%] pb-[25%]" data-aos="fade-right">
-                <p className="mb-2 text-[12px] font-bold text-left md:text-[15px]">
+                <p className="mb-2 text-[15px] font-bold text-left md:text-[15px]">
                     Des solutions innovantes pour donner vie à vos idées et créer des expériences uniques.
                 </p>
-                <p className="text-[10px] text-justify pr-[5%]">
+                <p className="text-[13px] text-justify pr-[5%]">
                     Des solutions innovantes conçues pour donner vie à vos idées, en combinant créativité, stratégie et technologie. Chaque projet est pensé pour offrir une expérience utilisateur fluide, moderne et impactante, tout en garantissant performance, cohérence visuelle et évolutivité. Mon objectif est de transformer chaque concept en une solution digitale unique, alignée avec vos besoins et vos ambitions.
                 </p>
 

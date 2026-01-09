@@ -168,11 +168,11 @@ export default function Page() {
 
             <div className="mt-[50%] md:mt-[25%] lg:mt-[5%]">
               <p className="text-white font-bold text-[20px] md:text-[25px] lg:text-[30px]">Quelques<span className="bg-gradient-to-r from-[#ffff] to-[#9936AF] bg-clip-text text-transparent"> projets</span></p>
-              <p className="text-white opacity-80 text-[12px] font-bold md:text-[15px] md:px-[15%]">Quelques projets académiques et personnells Des projets pensés, conçus et livrés avec précision.</p>
-              <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[5%] mb-[5%] rounded-xl md:mt-[4%] md:mb-[2%]"></div>
-              <p className="text-white opacity-90 text-[12px] text-center px-[6%] md:text-[15px] md:px-[15%] lg:px-[20%]">Découvrez une sélection de réalisations qui reflètent mon style, mon expertise et ma vision. Chaque projet raconte une histoire : un besoin, une idée, une solution concrète et mesurable.</p>
+              <p className="text-white opacity-80 text-[14px] px-[2%] font-bold md:text-[15px] md:px-[15%]">Quelques projets académiques et personnells Des projets pensés, conçus et livrés avec précision.</p>
+              <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[3%] mb-[5%] rounded-xl md:mt-[4%] md:mb-[2%]"></div>
+              <p className="text-white opacity-90 text-[14px] text-center px-[6%] md:text-[15px] md:px-[15%] lg:px-[20%]">Découvrez une sélection de réalisations qui reflètent mon style, mon expertise et ma vision. Chaque projet raconte une histoire : un besoin, une idée, une solution concrète et mesurable.</p>
 
-              <div className="mt-[12%] w-[50%] rounded-full p-[2px] bg-gradient-to-r from-[#fff] to-[#9936AF] mx-auto md:mt-[7%] lg:w-[30%]">
+              <div className="mt-[10%] w-[50%] rounded-full p-[2px] bg-gradient-to-r from-[#fff] to-[#9936AF] mx-auto md:mt-[7%] lg:w-[30%]">
                 <Button className="w-full h-[6vh] rounded-full bg-gradient-to-r from-[#0D0716] to-[#000000] text-white border-none md:text-[15px]">
                   <Linke to="/projet">
                     Tous les projets
@@ -189,8 +189,8 @@ export default function Page() {
           <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[5%] mb-[5%] rounded-xl md:mt-[4%] md:mb-[2%] md:mx-0 md:ml-[10%] lg:mx-0 lg:ml-[13%] lg:mt-[1%]"></div>
           <div className="">
             <div className=" lg:pr-[38%]">
-              <p className="text-white opacity-90 text-justify text-[12px] px-[6%] md:text-[15px] md:px-[15%] lg:px-[20%] lg:pr-[25%]">Développeur web passionné par l’univers du digital et les technologies modernes. Mon parcours m’a permis d’acquérir une solide expérience dans la conception et le développement de solutions web performantes, alliant interfaces intuitives, architectures efficaces et respect des bonnes pratiques en matière d’accessibilité et de responsive design.</p>
-              <p className="text-white opacity-90 text-[12px] text-justify px-[6%] mt-3 md:text-[15px] md:px-[15%] lg:px-[20%] lg:pr-[25%]">Curieux et en constante veille technologique, j’accorde une grande importance à la qualité du code, à l’optimisation des performances et à l’accessibilité, afin de proposer des expériences numériques cohérentes, modernes et durables.</p>
+              <p className="text-white opacity-90 text-justify text-[14px] px-[6%] md:text-[15px] md:px-[15%] lg:px-[20%] lg:pr-[25%]">Développeur web passionné par l’univers du digital et les technologies modernes. Mon parcours m’a permis d’acquérir une solide expérience dans la conception et le développement de solutions web performantes, alliant interfaces intuitives, architectures efficaces et respect des bonnes pratiques en matière d’accessibilité et de responsive design.</p>
+              <p className="text-white opacity-90 text-[14px] text-justify px-[6%] mt-3 md:text-[15px] md:px-[15%] lg:px-[20%] lg:pr-[25%]">Curieux et en constante veille technologique, j’accorde une grande importance à la qualité du code, à l’optimisation des performances et à l’accessibilité, afin de proposer des expériences numériques cohérentes, modernes et durables.</p>
             </div>
 
             <div className="mt-[10%] px-[5%] space-y-[5%] md:px-[15%] md:mt-[5%] lg:hidden">
