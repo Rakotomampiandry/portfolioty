@@ -87,11 +87,11 @@ export default function Page() {
               <div className="lg:text-left md:text-left">
                 <p className="text-white font-bold text-[30px]">Rakotomampiandry <span className="bg-gradient-to-r from-[#ffff] to-[#9936AF] bg-clip-text text-transparent">Mickaël</span></p>
                 <p className="text-white opacity-80 font-bold text-[25px]">Développeur et designer web</p>
-                <p className="text-white text-center text-[15px] px-[2%] mt-[5%] md:text-[15px] md:px-0 md:pr-[35%] md:text-left md:mt-[2%] lg:text-[15px] lg:pr-[60%] lg:mt-[1%]">Développeur et designer, j’allie esthétique, stratégie et technologie pour donner vie à des projets modernes.</p>
+                <p className="text-white text-center text-[15px] px-[5%] mt-[5%] md:text-[15px] md:px-0 md:pr-[35%] md:text-left md:mt-[2%] lg:text-[15px] lg:pr-[60%] lg:mt-[1%]">Développeur et designer, j’allie esthétique, stratégie et technologie pour donner vie à des projets modernes.</p>
               </div>
 
               <div className="mt-[15%] md:mt-[5%] lg:mt-[2%]">
-                <Button className="text-white bg-gradient-to-r from-[#000] to-[#9936AF] border border-white font-bold w-[75%] h-[7vh] rounded-2xl md:w-[50%] md:h-[5vh] md:ml-[-50%] lg:w-[15%] lg:h-[7vh] lg:ml-[-85%] ">
+                <Button className="text-white bg-gradient-to-r from-[#000] to-[#9936AF] border border-white font-bold w-[75%] h-[7vh] rounded-3xl lg:rounded-2xl md:w-[50%] md:h-[5vh] md:ml-[-50%] lg:w-[15%] lg:h-[7vh] lg:ml-[-85%] ">
                   <Link
                     href="/web.pdf"
                     download
@@ -103,8 +103,8 @@ export default function Page() {
 
                 <div className="mt-[10%] flex space-x-2 md:mt-[4%] lg:mt-[1.5%]">
                   <div className="p-[2px] rounded-2xl bg-gradient-to-tr w-[18%] from-[#ffff] to-[#9936AF] shadow-[0_0_15px_#9936af55] animate-[gradientMove_4s_ease_infinite] bg-[length:300%_300%] md:w-[10%] lg:w-[4%]">
-                    <div className="bg-gradient-to-r from-[#000000] to-[#0D0716] rounded-2xl p-4 flex items-center justify-center cursor-pointer">
-                      <BsFacebook className=" w-[5vh] text-white md:w-[10vh]"/>
+                    <div className="bg-gradient-to-r from-[#000000] to-[#0D0716] rounded-2xl p-3 flex items-center justify-center cursor-pointer">
+                      <BsFacebook className="  text-white md:w-[10vh]"/>
                     </div>
                   </div>
 
