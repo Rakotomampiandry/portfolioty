@@ -102,10 +102,9 @@ export default function Page() {
                 </Button>
 
                 <div className="mt-[10%] flex space-x-2 md:mt-[4%] lg:mt-[1.5%]">
-                  <div className="p-[2px] rounded-2xl bg-gradient-to-tr w-[18%] h-[5%] from-[#ffff] to-[#9936AF] shadow-[0_0_15px_#9936af55] animate-[gradientMove_4s_ease_infinite] bg-[length:300%_300%] md:w-[10%] lg:w-[4%]">
-                    <div className="bg-gradient-to-r from-[#000000] to-[#0D0716] rounded-2xl p-4 flex items-center justify-center cursor-pointer">
+                  <div className="p-[2px] rounded-2xl bg-gradient-to-tr w-[18%] from-[#ffff] to-[#9936AF] shadow-[0_0_15px_#9936af55] animate-[gradientMove_4s_ease_infinite] bg-[length:300%_300%] md:w-[10%] lg:w-[4%]">
+                    <div className="bg-gradient-to-r from-[#000000] to-[#0D0716] rounded-2xl p-[35%] flex items-center justify-center cursor-pointer">
                       <BsFacebook className=" w-[5vh] text-white md:w-[10vh]"/>
-                      
                     </div>
                   </div>
 
