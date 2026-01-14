@@ -39,12 +39,14 @@ export function Tech() {
                     transition={{ type: "spring", stiffness: 120, damping: 15 }}
                     viewport={{ once: false }}
                 >
-                    <p className="font-extrabold text-violeta text-[40px] lg:text-[50px] tracking-wide uppercase">
+                   <p className="text-[10px] text-white opacity-35 font-semibold">Bienvenue sur la page tech</p>
+                    <p className="font-extrabold text-transparent text-[40px] lg:text-[50px] tracking-wider uppercase bg-clip-text bg-gradient-to-r from-[#8B5CF6] via-violeta to-[#F59E0B] drop-shadow-lg">
                         Technologies
                     </p>
-                    <p className="text-violeta text-[18px] lg:text-[25px] font-semibold opacity-90 tracking-wide">
-                        Langage de programmation
+                    <p className="text-[18px] lg:text-[25px] text-violeta opacity-90 tracking-wide mt-2 font-bold">
+                        Langages de programmation
                     </p>
+
                 </motion.div>
 
             </div>
