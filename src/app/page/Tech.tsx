@@ -50,7 +50,7 @@ export function Tech() {
                     { img: "cs.png", title: "CSS", text: "Style des pages" },
                     { img: "js.png", title: "JavaScript", text: "Fonctionnalités" },
                     { img: "nestjs.png", title: "NestJS", text: "Backend structuré" },
-                    { img: "react.png", title: "React", text: "Interfaces web" },
+                    { img: "react.png", title: "React", text: "Interfaces web", classImage:"animate-spin-slow" },
                     { img: "nextjs.png", title: "Next.js", text: "Framework React" },
                     { img: "postgresql.png", title: "PostgreSQL", text: "Base de données" },
                     { img: "mysql.png", title: "MySQL", text: "Base de données" },
@@ -70,12 +70,13 @@ export function Tech() {
                             alt={`logo ${skill.title}`}
                             titre={skill.title}
                             text={skill.text}
+                            classImage={skill.classImage}
                         />
                     </motion.div>
                 ))}
             </motion.div>
 
-            {/* Desktop */}
+            {/* Desktop et tablette */}
             <motion.div
                 className="hidden lg:flex justify-center px-[10%] mt-[2%] md:flex md:mt-[5%]"
                 variants={containerVariants}
@@ -89,7 +90,7 @@ export function Tech() {
                         { img: "cs.png", title: "CSS", text: "Style des pages" },
                         { img: "js.png", title: "JavaScript", text: "Fonctionnalités" },
                         { img: "nestjs.png", title: "NestJS", text: "Backend structuré" },
-                        { img: "react.png", title: "React", text: "Interfaces web" },
+                        { img: "react.png", title: "React", text: "Interfaces web", classImage:"animate-spin-slow"},
                         { img: "nextjs.png", title: "Next.js", text: "Framework React" },
                         { img: "postgresql.png", title: "PostgreSQL", text: "Base de données" },
                         { img: "mysql.png", title: "MySQL", text: "Base de données" },
@@ -112,6 +113,7 @@ export function Tech() {
                                         alt={`logo ${skill.title}`}
                                         titre={skill.title}
                                         text={skill.text}
+                                        classImage={skill.classImage}
                                     />
                                 </div>
                             </div>
