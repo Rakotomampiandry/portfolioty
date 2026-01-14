@@ -37,6 +37,7 @@ export function Tech() {
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ type: "spring", stiffness: 120, damping: 15 }}
+                    viewport={{ once: false }}
                 >
                     <p className="font-extrabold text-violeta text-[40px] lg:text-[50px] tracking-wide uppercase">
                         Technologies
