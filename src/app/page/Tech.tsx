@@ -30,15 +30,22 @@ const itemVariants = {
 
 export function Tech() {
     return (
-        <div className="pb-[10%] lg:pb-[5%] md:pb-[10%]">
+        <div className="pb-0 lg:pb-[5%] md:pb-[10%]">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <p className="text-white font-semibold opacity-20 text-[10px] lg:text-[12px]">
-                    Bienvenue sur la page techs
-                </p>
-                <p className="font-bold text-violeta text-[40px] lg:text-[50px]">Technologies</p>
-                <p className="text-violeta text-[18px] font-bold opacity-90 lg:text-[25px]">
-                    Langage de programmation
-                </p>
+                <motion.div
+                    className="text-center"
+                    initial={{ y: 50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", stiffness: 120, damping: 15 }}
+                >
+                    <p className="font-extrabold text-violeta text-[40px] lg:text-[50px] tracking-wide uppercase">
+                        Technologies
+                    </p>
+                    <p className="text-violeta text-[18px] lg:text-[25px] font-semibold opacity-90 tracking-wide">
+                        Langage de programmation
+                    </p>
+                </motion.div>
+
             </div>
 
 
@@ -55,7 +62,7 @@ export function Tech() {
                     { img: "cs.png", title: "CSS", text: "Style des pages" },
                     { img: "js.png", title: "JavaScript", text: "Fonctionnalités" },
                     { img: "nestjs.png", title: "NestJS", text: "Backend structuré" },
-                    { img: "react.png", title: "React", text: "Interfaces web", classImage:"animate-spin-slow" },
+                    { img: "react.png", title: "React", text: "Interfaces web", classImage: "animate-spin-slow" },
                     { img: "nextjs.png", title: "Next.js", text: "Framework React" },
                     { img: "postgresql.png", title: "PostgreSQL", text: "Base de données" },
                     { img: "mysql.png", title: "MySQL", text: "Base de données" },
@@ -95,7 +102,7 @@ export function Tech() {
                         { img: "cs.png", title: "CSS", text: "Style des pages" },
                         { img: "js.png", title: "JavaScript", text: "Fonctionnalités" },
                         { img: "nestjs.png", title: "NestJS", text: "Backend structuré" },
-                        { img: "react.png", title: "React", text: "Interfaces web", classImage:"animate-spin-slow"},
+                        { img: "react.png", title: "React", text: "Interfaces web", classImage: "animate-spin-slow" },
                         { img: "nextjs.png", title: "Next.js", text: "Framework React" },
                         { img: "postgresql.png", title: "PostgreSQL", text: "Base de données" },
                         { img: "mysql.png", title: "MySQL", text: "Base de données" },
