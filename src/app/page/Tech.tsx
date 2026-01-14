@@ -10,7 +10,7 @@ export function Tech() {
             </div>
 
             {/* Phone */}
-            <div className="grid grid-cols-2 gap-[3%] lg:hidden md:hidden">
+            <div className="grid grid-cols-3 gap-[3%] mt-[5%] lg:hidden md:hidden">
                 <CadreSkil
                     image="./images/hml.png"
                     alt="logo html"
