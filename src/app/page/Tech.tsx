@@ -30,13 +30,13 @@ const itemVariants = {
 
 export function Tech() {
     return (
-        <div className="pb-[15%] lg:pb-[5%] md:pb-[10%]">
+        <div className="pb-[10%] lg:pb-[5%] md:pb-[10%]">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <p className="text-white font-semibold opacity-20 text-[10px]">
+                <p className="text-white font-semibold opacity-20 text-[10px] lg:text-[12px]">
                     Bienvenue sur la page techs
                 </p>
-                <p className="font-bold text-violeta text-[40px]">Technologies</p>
-                <p className="text-violeta text-[18px] font-bold opacity-90">
+                <p className="font-bold text-violeta text-[40px] lg:text-[50px]">Technologies</p>
+                <p className="text-violeta text-[18px] font-bold opacity-90 lg:text-[25px]">
                     Langage de programmation
                 </p>
             </div>
