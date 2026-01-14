@@ -5,12 +5,12 @@ import { Header } from "antd/es/layout/layout";
 import { Cadre, CadreShadow } from "./app/component/cadre";
 import { Skil } from "./app/component/skil";
 import Projet from "./app/page/projet";
-import { CadreProjetDroit, CadreProjetGauche } from "./app/component/cadreProjet";
-import { Anime } from "./app/component/animation";
 import { Service, ServiceP } from "./app/component/service";
 import DetailService from "./app/page/detailService";
 import { Facebook } from "./app/modal/facebook";
 import { Ouverture } from "./app/component/ouverture";
+import { About } from "./app/page/about";
+
 
 const App = () => {
   return (
@@ -25,7 +25,8 @@ const App = () => {
         <Route path="/serviceP" element={<ServiceP />} />
         <Route path="/detailS" element={<DetailService />} />
         <Route path="/ouverture" element={<Ouverture />} />
-        {/* <Route path="/animation" element={<Anime />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/skill" element={<Skil />} />
         {/* <Route path="/cadreProjet" element={<CadreProjetDroit />} /> */}
         {/* <Route path="/cadreProjetD" element={<CadreProjetGauche />} /> */}
       </Routes>

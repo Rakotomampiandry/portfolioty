@@ -2,7 +2,7 @@ import { Modal, Form, Input, message, Button } from "antd";
 
 export default function Footer() {
   return (
-    <footer  className="bg-gradient-to-r from-[#000000] to-[#0D0716] pt-[10%] md:pt-[5%]">
+    <footer  className="bg-gradient-to-r from-[#0D0716] to-[#000] pt-[10%] md:pt-[5%]">
       <div className="">
         <p className="text-white font-bold text-[25px] px-[20%] text-center flex justify-center mb-[2%] lg:mb-[0.5%]">Intéressé par mon profil ? Parlons-en.</p>
         <p className="text-white opacity-80 justify-center text-center px-[13%] text-[14px] md:text-[15px] lg:px-[28%]">Passionné par le développement web et le design UI/UX, je mets mes compétences au service de projets innovants et modernes.</p>
