@@ -30,7 +30,7 @@ const itemVariants = {
 
 export function Tech() {
     return (
-        <div className="pb-[40%] lg:pb-[5%] md:pb-[10%]">
+        <div className="pb-[20%] lg:pb-[5%] md:pb-[10%]">
             <div className="place-content-center">
                 <p className="text-white font-semibold opacity-20 text-[10px]">Bienvenue sur la page techs</p>
                 <p className="font-bold text-violeta text-[30px]">Technologie</p>
