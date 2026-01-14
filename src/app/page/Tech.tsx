@@ -30,7 +30,7 @@ const itemVariants = {
 
 export function Tech() {
     return (
-        <div className="pb-0 lg:pb-[5%] md:pb-[10%]">
+        <div className="pb-[-8%] lg:pb-[5%] md:pb-[10%]">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                 <motion.div
                     className="text-center"
@@ -109,8 +109,8 @@ export function Tech() {
                         { img: "nextjs.png", title: "Next.js", text: "Framework React" },
                         { img: "postgresql.png", title: "PostgreSQL", text: "Base de données" },
                         { img: "mysql.png", title: "MySQL", text: "Base de données" },
-                        { img: "tailwind.png", title: "Tailwind CSS", text: "Styles rapides" },
                         { img: "figma.png", title: "Figma", text: "Design d'interfaces" },
+                        { img: "tailwind.png", title: "Tailwind CSS", text: "Styles rapides" },
                         { img: "typescript.png", title: "TypeScript", text: "Typage" },
                         { img: "git.png", title: "Git & GitHub", text: "Collaboration" },
                     ].map((skill, index) => (
