@@ -1,4 +1,32 @@
 import { CadreSkil } from "../component/cadre";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.5,
+        },
+    },
+};
+
+const itemVariants = {
+    hidden: {
+        opacity: 0,
+        y: 20,
+        scale: 0.97,
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: {
+            duration: 0.5,
+            ease: "easeOut",
+        },
+    },
+};
 
 export function Tech() {
     return (
@@ -10,181 +38,87 @@ export function Tech() {
             </div>
 
             {/* Phone */}
-            <div className="grid grid-cols-3 gap-[3%] mt-[5%] lg:hidden md:hidden">
-                <CadreSkil
-                    image="./images/hml.png"
-                    alt="logo html"
-                    titre="HTML"
-                    text="Structure web"
-                />
-
-                <CadreSkil
-                    image="./images/cs.png"
-                    alt="logo css"
-                    titre="CSS"
-                    text="Style des pages"
-                />
-
-                <CadreSkil
-                    image="./images/js.png"
-                    alt="logo javascript"
-                    titre="JavaScript"
-                    text="Fonctionnalités"
-                />
-
-                <CadreSkil
-                    image="./images/nestjs.png"
-                    alt="logo nestjs"
-                    titre="NestJS"
-                    text="Backend structuré"
-                />
-
-                <CadreSkil
-                    image="./images/react.png"
-                    alt="logo react"
-                    titre="React"
-                    text="Interfaces web"
-                />
-
-                <CadreSkil
-                    image="./images/nextjs.png"
-                    alt="logo nextjs"
-                    titre="Next.js"
-                    text="Framwork React"
-                />
-
-                <CadreSkil
-                    image="./images/postgresql.png"
-                    alt="logo postgresql"
-                    titre="PostgreSQL"
-                    text="Base de données"
-                />
-
-                <CadreSkil
-                    image="./images/mysql.png"
-                    alt="logo mysql"
-                    titre="MySQL"
-                    text="Base de données"
-                />
-
-                <CadreSkil
-                    image="./images/tailwind.png"
-                    alt="logo tailwind"
-                    titre="Tailwind CSS"
-                    text="Styles rapides"
-                />
-
-                <CadreSkil
-                    image="./images/figma.png"
-                    alt="logo figma"
-                    titre="Figma"
-                    text="Design d'interfaces"
-                />
-
-                <CadreSkil
-                    image="./images/typescript.png"
-                    alt="logo typescript"
-                    titre="TypeScript"
-                    text="Typage"
-                />
-
-                <CadreSkil
-                    image="./images/git.png"
-                    alt="logo github"
-                    titre="Git & GitHub"
-                    text="Collaboration"
-                />
-            </div>
+            <motion.div
+                className="grid grid-cols-3 gap-[3%] mt-[5%] lg:hidden md:hidden"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+            >
+                {[
+                    { img: "hml.png", title: "HTML", text: "Structure web" },
+                    { img: "cs.png", title: "CSS", text: "Style des pages" },
+                    { img: "js.png", title: "JavaScript", text: "Fonctionnalités" },
+                    { img: "nestjs.png", title: "NestJS", text: "Backend structuré" },
+                    { img: "react.png", title: "React", text: "Interfaces web" },
+                    { img: "nextjs.png", title: "Next.js", text: "Framework React" },
+                    { img: "postgresql.png", title: "PostgreSQL", text: "Base de données" },
+                    { img: "mysql.png", title: "MySQL", text: "Base de données" },
+                    { img: "tailwind.png", title: "Tailwind CSS", text: "Styles rapides" },
+                    { img: "figma.png", title: "Figma", text: "Design d'interfaces" },
+                    { img: "typescript.png", title: "TypeScript", text: "Typage" },
+                    { img: "git.png", title: "Git & GitHub", text: "Collaboration" },
+                ].map((skill, index) => (
+                    <motion.div
+                        key={index}
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05, y: -5 }}
+                        transition={{ type: "spring", stiffness: 200 }}
+                    >
+                        <CadreSkil
+                            image={`./images/${skill.img}`}
+                            alt={`logo ${skill.title}`}
+                            titre={skill.title}
+                            text={skill.text}
+                        />
+                    </motion.div>
+                ))}
+            </motion.div>
 
             {/* Desktop */}
-            <div className="hidden lg:flex justify-center px-[10%] mt-[2%] md:flex md:mt-[5%]">
+            <motion.div
+                className="hidden lg:flex justify-center px-[10%] mt-[2%] md:flex md:mt-[5%]"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+            >
                 <div className="grid lg:grid-cols-4 gap-[2%] md:grid-cols-3">
-                    <CadreSkil
-                        image="./images/hml.png"
-                        alt="logo html"
-                        titre="HTML"
-                        text="Structure web"
-                    />
-
-                    <CadreSkil
-                        image="./images/cs.png"
-                        alt="logo css"
-                        titre="CSS"
-                        text="Style des pages"
-                    />
-
-                    <CadreSkil
-                        image="./images/js.png"
-                        alt="logo javascript"
-                        titre="JavaScript"
-                        text="Fonctionnalités"
-                    />
-
-                    <CadreSkil
-                        image="./images/nestjs.png"
-                        alt="logo nestjs"
-                        titre="NestJS"
-                        text="Backend structuré"
-                    />
-
-                    <CadreSkil
-                        image="./images/react.png"
-                        alt="logo react"
-                        titre="React"
-                        text="Interfaces web"
-                    />
-
-                    <CadreSkil
-                        image="./images/nextjs.png"
-                        alt="logo nextjs"
-                        titre="Next.js"
-                        text="Framwork React"
-                    />
-
-                    <CadreSkil
-                        image="./images/postgresql.png"
-                        alt="logo postgresql"
-                        titre="PostgreSQL"
-                        text="Base de données"
-                    />
-
-                    <CadreSkil
-                        image="./images/mysql.png"
-                        alt="logo mysql"
-                        titre="MySQL"
-                        text="Base de données"
-                    />
-
-                    <CadreSkil
-                        image="./images/tailwind.png"
-                        alt="logo tailwind"
-                        titre="Tailwind CSS"
-                        text="Styles rapides"
-                    />
-
-                    <CadreSkil
-                        image="./images/figma.png"
-                        alt="logo figma"
-                        titre="Figma"
-                        text="Design d'interfaces"
-                    />
-
-                    <CadreSkil
-                        image="./images/typescript.png"
-                        alt="logo typescript"
-                        titre="TypeScript"
-                        text="Typage"
-                    />
-
-                    <CadreSkil
-                        image="./images/git.png"
-                        alt="logo github"
-                        titre="Git & GitHub"
-                        text="Collaboration"
-                    />
+                    {[
+                        { img: "hml.png", title: "HTML", text: "Structure web" },
+                        { img: "cs.png", title: "CSS", text: "Style des pages" },
+                        { img: "js.png", title: "JavaScript", text: "Fonctionnalités" },
+                        { img: "nestjs.png", title: "NestJS", text: "Backend structuré" },
+                        { img: "react.png", title: "React", text: "Interfaces web" },
+                        { img: "nextjs.png", title: "Next.js", text: "Framework React" },
+                        { img: "postgresql.png", title: "PostgreSQL", text: "Base de données" },
+                        { img: "mysql.png", title: "MySQL", text: "Base de données" },
+                        { img: "tailwind.png", title: "Tailwind CSS", text: "Styles rapides" },
+                        { img: "figma.png", title: "Figma", text: "Design d'interfaces" },
+                        { img: "typescript.png", title: "TypeScript", text: "Typage" },
+                        { img: "git.png", title: "Git & GitHub", text: "Collaboration" },
+                    ].map((skill, index) => (
+                        <motion.div
+                            key={index}
+                            variants={itemVariants}
+                            style={{ perspective: 1000 }} // pour le tilt 3D
+                            whileHover={{ rotateX: -8, rotateY: 8, scale: 1.05 }}
+                            transition={{ type: "spring", stiffness: 200, damping: 12 }}
+                        >
+                            <div className=" rounded-2xl cursor-pointer transition-all duration-300">
+                                <div className="text-center">
+                                    <CadreSkil
+                                        image={`./images/${skill.img}`}
+                                        alt={`logo ${skill.title}`}
+                                        titre={skill.title}
+                                        text={skill.text}
+                                    />
+                                </div>
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
-            </div>
-
+            </motion.div>
         </div>
     )
 }
