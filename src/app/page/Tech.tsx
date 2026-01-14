@@ -31,11 +31,16 @@ const itemVariants = {
 export function Tech() {
     return (
         <div className="pb-[20%] lg:pb-[5%] md:pb-[10%]">
-            <div className="place-content-center">
-                <p className="text-white font-semibold opacity-20 text-[10px]">Bienvenue sur la page techs</p>
-                <p className="font-bold text-violeta text-[30px]">Technologie</p>
-                <p className="text-violeta text-[18px] font-bold opacity-90">Langage de programmation</p>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <p className="text-white font-semibold opacity-20 text-[10px]">
+                    Bienvenue sur la page techs
+                </p>
+                <p className="font-bold text-violeta text-[40px]">Technologies</p>
+                <p className="text-violeta text-[18px] font-bold opacity-90">
+                    Langage de programmation
+                </p>
             </div>
+
 
             {/* Phone */}
             <motion.div
