@@ -10,6 +10,8 @@ import DetailService from "./app/page/detailService";
 import { Facebook } from "./app/modal/facebook";
 import { Ouverture } from "./app/component/ouverture";
 import { About } from "./app/page/about";
+import Contact from "./app/page/contact";
+import Home from "./app/page/home";
 
 
 const App = () => {
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/ouverture" element={<Ouverture />} />
         <Route path="/about" element={<About />} />
         <Route path="/skill" element={<Skil />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/home" element={<Home />} />
         {/* <Route path="/cadreProjet" element={<CadreProjetDroit />} /> */}
         {/* <Route path="/cadreProjetD" element={<CadreProjetGauche />} /> */}
       </Routes>

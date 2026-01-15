@@ -9,9 +9,11 @@ import { SiNestjs } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { GrReactjs } from "react-icons/gr";
 
+// bg-gradient-to-r from-[#020203] via-[#2A1A0F] to-[#020203]
+
 export function Skil() {
     return (
-        <div className="overflow-hidden relative bg-black h-[20vh] flex items-center justify-center">
+        <div className="overflow-hidden bg-black relative h-[20vh] flex items-center justify-center">
             <div className="flex animate-scroll opacity-50 space-x-[5%] lg:hidden">
                 <GrReactjs className="text-white text-[10vh] blur-[1.5px]" />
                 <TbBrandNextjs className="text-white text-[10vh] blur-[1.5px]" />
