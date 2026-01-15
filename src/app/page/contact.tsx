@@ -1,24 +1,75 @@
+import { TbBrandGmail } from "react-icons/tb"; 
+import { BsWhatsapp } from "react-icons/bs"; 
+import { FiLinkedin } from "react-icons/fi"; 
+import { FiFacebook } from "react-icons/fi"; 
 import React from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { Link as Linke } from "react-router-dom";
+import { Button, Input } from "antd";
+import TextArea from "antd/es/input/TextArea";
 
-export default function Contact(){
-    return(
-        <div className="bg-gradient-to-r from-[#0D0716] to-[#000000] h-screen">
-            <br />
-            <div className="hidden md:hidden ml-[2%] lg:block bg-violeta bg-opacity-20 w-[3%] py-[1%] rounded-full place-content-center place-items-center text-violeta cursor-pointer duration-200 hover:bg-opacity-30">
-                <Linke to="/" className="place-content-center place-items-center flex">
-                    <BiArrowBack className="text-[18px]" />
-                </Linke>
-            </div>
-            <div className="bg-violeta bg-opacity-20 w-[10%] py-[2.5%] ml-[2%] rounded-full place-content-center place-items-center text-violeta cursor-pointer duration-200 hover:bg-opacity-30 md:w-[5%] md:py-[1.5%] lg:hidden">
-                <Linke to="/" className="place-content-center place-items-center flex">
-                    <BiArrowBack className="text-[18px]" />
-                </Linke>
-            </div>
+export default function Contact() {
+    return (
+        <div className="relative w-full h-screen overflow-hidden">
+            {/* Vidéo de fond */}
+            <video
+                className="absolute top-0 left-0 w-full h-full object-cover "
+                autoPlay
+                loop
+                muted
+                playsInline
+            >
+                <source src="./videos/fond1.mp4" type="video/mp4" />
+            </video>
 
-            <div className="text-center">
-                <p className="text-white font-bold text-[20px] opacity-80">Plus d'information</p>
+            {/* Overlay sombre (optionnel mais conseillé) */}
+            <div className="absolute inset-0 bg-black/50"></div>
+
+            <div className="relative z-10 h-full">
+                <br />
+                <div className="hidden md:hidden lg:block bg-gray-400 ml-[1%] bg-opacity-20 w-[3%] py-[1%] rounded-full place-content-center place-items-center text-white cursor-pointer duration-200 hover:bg-opacity-30">
+                    <Linke to="/" className="place-content-center place-items-center flex">
+                        <BiArrowBack className="text-[18px]" />
+                    </Linke>
+                </div>
+
+                <div className="bg-gray-400 bg-opacity-20 w-[10%] ml-[3%] py-[2.5%] rounded-full place-content-center place-items-center text-white cursor-pointer duration-200 hover:bg-opacity-30 md:w-[5%] md:py-[1.5%] lg:hidden">
+                    <Linke to="/" className="place-content-center place-items-center flex">
+                        <BiArrowBack className="text-[18px]" />
+                    </Linke>
+                </div>
+
+                <div className="text-center">
+                    <h1 className="text-white font-bold text-[22px] lg:text-[28px] md:text-[25px]">Plus d'information</h1>
+                    <h2 className="text-white opacity-70 px-[15%]">Envoyer un message direct vers mon Email</h2>
+                    <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#243c5d] to-[#fff] mt-[3%] mb-[5%] rounded-xl md:mt-[2%] md:mb-[2%] lg:mt-[1%]"></div>
+                </div>
+
+                {/* Phone */}
+                <div className="mt-[2%] lg:hidden md:hidden">
+                    <div className="w-[90%] rounded-2xl bg-white h-[65vh] bg-opacity-5 mx-auto text-center">
+                        <p className="text-white pt-[5%] font-bold text-[18px]">Message direct vers mon Email</p>
+                        <p className="text-white opacity-80 text-[12px]">Envoyer un message direct vers mon Email</p>
+                        <div className="w-[7vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#243c5d] to-[#fff] mt-[3%] mb-[5%] rounded-xl md:mt-[2%] md:mb-[2%] lg:mt-[1%]"></div>
+
+                        <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Nom</p>
+                        <Input className="w-[80%]" type="text"/>
+                        <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Email</p>
+                        <Input className="w-[80%]" type="Email"/>
+                        <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Message</p>
+                        <TextArea className="w-[80%]"/>
+                        <Button className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[10%]">
+                            Envoyer
+                        </Button>
+                    </div>
+
+                      <div className="flex items-center justify-center mt-[5%] space-x-[4%] text-white text-[35px]">
+                        <FiFacebook className="border-2 border-white rounded-xl p-[1%]"/>
+                        <FiLinkedin className="border-2 border-white rounded-xl p-[1%]"/>
+                        <BsWhatsapp className="border-2 border-white rounded-xl p-[1%]"/>
+                        <TbBrandGmail className="border-2 border-white rounded-xl p-[1%]"/>
+                    </div>
+                </div>
             </div>
         </div>
     )

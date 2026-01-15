@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 export function About() {
     // Animation AOS
@@ -77,7 +78,9 @@ export function About() {
                         <div className="bg-white w-full h-[6vh] mt-[10%] rounded-lg flex items-center lg:mt-[4%] lg:w-[40%] lg:mx-auto md:mt-[5%] md:w-[50%] md:h-[5vh] md:mx-auto">
                             <p className="font-bold ml-[15%] text-[14px] opacity-70 lg:ml-[10%]">Plus d'information</p>
                             <Button className="bg-[#243c5d] left-[20%] lg:left-[15%]">
-                                <AiOutlineArrowRight className="text-white py-[2%]" />
+                                <Link to="/contact">
+                                    <AiOutlineArrowRight className="text-white py-[2%]" />
+                                </Link>
                             </Button>
                         </div>
                     </div>
