@@ -10,10 +10,10 @@ main{
 
 /* Supprime le hover pour tous les boutons */
 .ant-btn:hover {
-  background-color: violet !important; /* ou la couleur que tu veux */
+  background-color: rgb(10, 12, 28) !important; /* ou la couleur que tu veux */
   opacity: 0.5;
-  color: rgb(0, 0, 0) !important; /* supprime le changement de couleur */
-  border-color: rgb(255, 171, 255) !important; /* supprime le changement de bordure */
+  color: rgb(255, 248, 248) !important; /* supprime le changement de couleur */
+  border-color: rgb(64, 42, 12) !important; /* supprime le changement de bordure */
   box-shadow: none !important; /* supprime l'ombre si présente */
 }
 

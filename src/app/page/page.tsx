@@ -1,28 +1,18 @@
-import { AiOutlineGithub } from "react-icons/ai";
-import { CgFigma } from "react-icons/cg";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGmail } from "react-icons/tb";
-import { SiWhatsapp } from "react-icons/si";
-import { AiFillGithub } from "react-icons/ai";
 import { BsFacebook, BsGithub } from "react-icons/bs";
-import { BiCodeAlt } from "react-icons/bi";
 import Footer from "../footer/footer";
-import Header from "../header/header";
-import { Cadre, CadreShadow, CadreTech } from "../component/cadre";
 import { Button } from "antd";
 import { Skil } from "../component/skil";
-import Link from "antd/es/typography/Link";
 import { Link as Linke } from "react-router-dom";
-import AnimatedText, { AnimatedSection, Anime } from "../component/animation";
 import { Service, ServiceP } from "../component/service";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useRef, useState } from "react";
 import { About } from "./about";
-import { Propos } from "./propos";
 import { Tech } from "./Tech";
-import Home from "./home";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from "antd/es/typography/Link";
 
 const Section = ({ id, children, className = '' }: {
   id: string;
@@ -99,6 +89,15 @@ export default function Page() {
               >
                 RAKOTOMAMPIANDRY <span className="tracking-normal">Mickaël</span>
               </h1>
+
+              <Button className="bg-gradient-to-r from-[#0A0F16] to-[#4A2E1A] rounded-2xl text-white font-bold w-[60%] py-[5%] mt-[5%] mx-auto lg:mt-[2%] lg:w-[35%] lg:mb-[2%] lg:py-[3%]">
+                <Link
+                  href="/web.pdf"
+                  download
+                >
+                  Télecharger mon CV
+                </Link>
+              </Button>
 
               <div className="flex justify-center space-x-2 mt-[8%] text-[25px] lg:mt-[3%] lg:text-[30px] cursor-pointer md:mt-[5%] opacity-80">
                 <FiFacebook className="hover:scale-125 hover:text-blue-600 duration-200 transition-all" />
