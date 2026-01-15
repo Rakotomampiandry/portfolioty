@@ -59,7 +59,7 @@ interface cadreSkil{
 
 export function CadreSkil({alt, titre, text, image, classImage}:cadreSkil){
   return(
-    <div className="bg-[#1A122E] bg-opacity-30 rounded-xl backdrop-blur-xl w-full py-[10%] flex flex-col items-center justify-center lg:py-[8%]">
+    <div className="bg-[#101925] bg-opacity-30 rounded-xl backdrop-blur-xl w-full py-[10%] flex flex-col items-center justify-center lg:py-[8%]">
       <img src={image} alt={alt} className={`w-[50%] ${classImage} mb-4 lg:w-[30%]`}   />
       <div className="text-white text-start ml-[-20%] lg:ml-[-50%] lg:mt-[5%]">
         <p className="font-bold text-[12px] lg:text-[15px]">{titre}</p>

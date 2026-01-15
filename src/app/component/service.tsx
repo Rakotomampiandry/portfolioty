@@ -26,7 +26,7 @@ export function Service() {
                     Des solutions innovantes conçues pour donner vie à vos idées, en combinant créativité, stratégie et technologie. Chaque projet est pensé pour offrir une expérience utilisateur fluide, moderne et impactante, tout en garantissant performance, cohérence visuelle et évolutivité. Mon objectif est de transformer chaque concept en une solution digitale unique, alignée avec vos besoins et vos ambitions.
                 </p>
 
-                <Button className="text-white bg-gradient-to-r from-[#000] to-[#9936AF] border border-white font-bold w-[40%] h-[5vh] rounded-2xl mt-[5%] float-left">
+                <Button className="text-white bg-gradient-to-r from-[#000] to-[#243c5d] border border-white font-bold w-[40%] h-[5vh] rounded-2xl mt-[5%] float-left">
                     <Link to="/detailS">
                         Détail
                     </Link>
@@ -184,7 +184,7 @@ export function ServiceP() {
                     Des solutions innovantes conçues pour donner vie à vos idées, en combinant créativité, stratégie et technologie. Chaque projet est pensé pour offrir une expérience utilisateur fluide, moderne et impactante, tout en garantissant performance, cohérence visuelle et évolutivité. Mon objectif est de transformer chaque concept en une solution digitale unique, alignée avec vos besoins et vos ambitions.
                 </p>
 
-                <Button className="text-white bg-gradient-to-r from-[#000] to-[#9936AF] border border-white font-bold w-[40%] h-[5vh] rounded-2xl mt-[5%] float-left md:rounded-3xl md:w-[30%] md:h-[4vh]">
+                <Button className="text-white bg-gradient-to-r from-[#000] to-[#243c5d] border border-white font-bold w-[40%] h-[5vh] rounded-2xl mt-[5%] float-left md:rounded-3xl md:w-[30%] md:h-[4vh]">
                     <Link to="/detailS">
                         Détail
                     </Link>

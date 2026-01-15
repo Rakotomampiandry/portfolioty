@@ -13,14 +13,14 @@ import 'aos/dist/aos.css';
 
 export default function Projet(){
     return(
-        <div  className="bg-gradient-to-r from-[#000000] to-[#0D0716] relative min-h-screen pt-[1%] pl-[1%]">
-            <div className="hidden md:hidden lg:block bg-violeta bg-opacity-20 w-[3%] py-[1%] rounded-full place-content-center place-items-center text-violeta cursor-pointer duration-200 hover:bg-opacity-30">
+        <div  className="bg-gradient-to-r from-[#000000] to-[#0A0F16] relative min-h-screen pt-[1%] pl-[1%]">
+            <div className="hidden md:hidden lg:block bg-[#192537] bg-opacity-20 w-[3%] py-[1%] rounded-full place-content-center place-items-center text-[#4b6c9c] cursor-pointer duration-200 hover:bg-opacity-30">
                 <Linke to="/" className="place-content-center place-items-center flex">
                     <BiArrowBack className="text-[18px]" />
                 </Linke>
             </div>
 
-             <div className="bg-violeta bg-opacity-20 w-[10%] py-[2.5%] rounded-full place-content-center place-items-center text-violeta cursor-pointer duration-200 hover:bg-opacity-30 md:w-[5%] md:py-[1.5%] lg:hidden">
+             <div className="bg-[#192537] bg-opacity-20 w-[10%] py-[2.5%] rounded-full place-content-center place-items-center text-[#4b6c9c] cursor-pointer duration-200 hover:bg-opacity-30 md:w-[5%] md:py-[1.5%] lg:hidden">
                 <Linke to="/" className="place-content-center place-items-center flex">
                     <BiArrowBack className="text-[18px]" />
                 </Linke>
@@ -29,7 +29,7 @@ export default function Projet(){
             <div className="">
                 <h1 className="text-center text-white font-bold text-[28px]">Projets</h1>
                 <p className="text-white opacity-80 text-center mb-[5%] text-[12px] px-[10%] lg:px-[25%] lg:text-[15px] lg:mb-0">Une sélection de projets académiques et personnels mettant en avant les compétences techniques, la créativité et la capacité à concevoir des solutions modernes et fonctionnelles.</p>
-                <div className="w-[15vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[1.5%] mb-[3%] rounded-xl"></div>
+                <div className="w-[15vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#4b6c9c] to-[#fff] mt-[1.5%] mb-[3%] rounded-xl"></div>
             </div>
 
             {/* DESKOTOP */}

@@ -94,7 +94,7 @@ export default function Page() {
           <div className="relative z-10 h-full flex items-center justify-center text-white">
             <div className="grid justify-center text-center">
               <p className="font-bold text-[12px]"> Développeur web Junior</p>
-              <h1 className="text-[20px] lg:text-[40px] font-extrabold tracking-widest text-transparent px-[10%] lg:px-0 md:px-0 hover:text-white transition-all duration-300 cursor-pointer md:text-[25px]"
+              <h1 className="text-[25px] lg:text-[40px] font-extrabold tracking-widest text-transparent px-[10%] lg:px-0 md:px-0 hover:text-white transition-all duration-300 cursor-pointer md:text-[25px]"
                 style={{ WebkitTextStroke: "1px #ffffff" }}
               >
                 RAKOTOMAMPIANDRY <span className="tracking-normal">Mickaël</span>
@@ -123,25 +123,25 @@ export default function Page() {
         <Skil />
 
         {/* Section Projets */}
-        <Section id="projects" className="bg-gradient-to-r from-[#0D0716] to-[#000000]">
+        <Section id="projects" className="bg-gradient-to-r from-[#0A0F16] to-[#000000]">
           <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 lg:mt-[-8%]">
             <div className="grid place-items-center">
-              <div className="rounded-xl shadow-sm shadow-[#9936AF] border border-t-[#9936AF] border-b-0 border-l-0 border-r-0 md:w-[70%] lg:w-[80%]" data-aos="fade-down">
+              <div className="rounded-xl shadow-sm shadow-[#243c5d] border border-t-[#243c5d] border-b-0 border-l-0 border-r-0 md:w-[70%] lg:w-[80%]" data-aos="fade-down">
                 <img src="../images/portfolio.png" alt="Ancien portfolio" className="rounded-xl" />
               </div>
-              <div className="rounded-xl shadow-sm shadow-[#9936AF] w-[30vh] absolute ml-[-5%] mt-[75%] border border-t-[#9936AF] border-b-0 border-l-0 border-r-0 md:w-[50%] md:ml-[5%] md:mt-[40%] lg:w-[25%] lg:mt-[20%] lg:ml-[30%]" data-aos="fade-up">
+              <div className="rounded-xl shadow-sm shadow-[#243c5d] w-[30vh] absolute ml-[-5%] mt-[75%] border border-t-[#243c5d] border-b-0 border-l-0 border-r-0 md:w-[50%] md:ml-[5%] md:mt-[40%] lg:w-[25%] lg:mt-[20%] lg:ml-[30%]" data-aos="fade-up">
                 <img src="../images/life.png" alt="design ui/ux up life" className="rounded-xl" />
               </div>
             </div>
 
             <div className="mt-[50%] md:mt-[25%] lg:mt-[5%]">
-              <p className="text-white font-bold text-[20px] md:text-[25px] lg:text-[30px]">Quelques<span className="bg-gradient-to-r from-[#ffff] to-[#9936AF] bg-clip-text text-transparent"> projets</span></p>
+              <p className="text-white font-bold text-[20px] md:text-[25px] lg:text-[30px]">Quelques<span className="bg-gradient-to-r from-[#ffff] via-[#0A0F16] to-[#243c5d] bg-clip-text text-transparent"> projets</span></p>
               <p className="text-white opacity-80 text-[14px] px-[2%] font-bold md:text-[15px] md:px-[15%]">Quelques projets académiques et personnells Des projets pensés, conçus et livrés avec précision.</p>
-              <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[3%] mb-[5%] rounded-xl md:mt-[4%] md:mb-[2%]"></div>
+              <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#243c5d] to-[#fff] mt-[3%] mb-[5%] rounded-xl md:mt-[4%] md:mb-[2%]"></div>
               <p className="text-white opacity-90 text-[14px] text-center px-[6%] md:text-[15px] md:px-[15%] lg:px-[20%]">Découvrez une sélection de réalisations qui reflètent mon style, mon expertise et ma vision. Chaque projet raconte une histoire : un besoin, une idée, une solution concrète et mesurable.</p>
 
-              <div className="mt-[10%] w-[50%] rounded-full p-[2px] bg-gradient-to-r from-[#fff] to-[#9936AF] mx-auto md:mt-[7%] lg:w-[30%]">
-                <Button className="w-full h-[6vh] rounded-full bg-gradient-to-r from-[#0D0716] to-[#000000] text-white border-none md:text-[15px]">
+              <div className="mt-[10%] w-[50%] rounded-full p-[2px] bg-gradient-to-r from-[#fff] to-[#243c5d] mx-auto md:mt-[7%] lg:w-[30%]">
+                <Button className="w-full h-[6vh] rounded-full bg-gradient-to-r from-[#243c5d] to-[#000000] text-white border-none md:text-[15px]">
                   <Linke to="/projet">
                     Tous les projets
                   </Linke>
@@ -152,18 +152,18 @@ export default function Page() {
         </Section>
 
         {/* Technologie */}
-        <Section id="tech" className="bg-gradient-to-r from-[#000] to-[#0D0716] grid place-content-start">
+        <Section id="tech" className="bg-gradient-to-r from-[#000] to-[#0A0F16] grid place-content-start">
           <Tech />
         </Section>
 
         {/* Section À propos */}
-        <Section id="about" className="bg-gradient-to-r from-[#0D0716] to-[#000] grid place-content-start">
+        <Section id="about" className="bg-gradient-to-r from-[#0A0F16] to-[#000] grid place-content-start">
           <About />
           {/* <Propos/> */}
         </Section>
 
         {/* Section service */}
-        <Section id="service" className="bg-gradient-to-r from-[#000] to-[#0D0716] grid place-content-start">
+        <Section id="service" className="bg-gradient-to-r from-[#000] to-[#0A0F16] grid place-content-start">
           <Service />
           <ServiceP />
         </Section>

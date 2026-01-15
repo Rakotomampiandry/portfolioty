@@ -27,13 +27,13 @@ interface detailDroit {
 export function CadreProjetDroit({ image, titre, texte, role, alt, Icone1, techno1, Icone2, techno2, Icone3, techno3, Icone4, techno4, divClassName }: detailDroit) {
     return (
         <div className={`hidden lg:flex justify-center min-h-screen text-white pt-[2%] ${divClassName}`}>
-            <div className=" h-[60vh] w-[60%] bg-mangabe rounded-2xl flex">
+            <div className=" h-[60vh] w-[60%] bg-[#0A0F16] rounded-2xl flex">
                 <div className="w-[65%]">
                     <img src={image} alt={alt} className="rounded-2xl w-full h-[100%]" loading="lazy"/>
                 </div>
 
                 <div className=" w-[35%]">
-                    <div className="bg-[#5618B8] flex justify-center bg-opacity-15 p-2 ml-[40vh] w-[10%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
+                    <div className="bg-[#192537] flex justify-center bg-opacity-15 p-2 ml-[40vh] w-[10%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
                         <Tooltip title="Lien GitHub" placement="topLeft">
                             <AiFillGithub className="p-[1%]" />
                         </Tooltip>
@@ -45,19 +45,19 @@ export function CadreProjetDroit({ image, titre, texte, role, alt, Icone1, techn
                         <p className="text-[12px] mt-[2%]"><span className="font-bold">Rôle:</span> <span>{role}</span></p>
 
                         <div className="flex mt-[12%] space-x-2">
-                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-xl text-[#9936AF]">
+                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-xl text-[#4a70a8]">
                                 {Icone1 && <Icone1 className={`text-[22px]`} />}
                                 <p className="text-[12px] font-bold">{techno1}</p>
                             </div>
-                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-xl text-[#9936AF]">
+                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-xl text-[#4a70a8]">
                                 {Icone2 && <Icone2 className={`text-[22px]`} />}
                                 <p className="text-[12px] font-bold">{techno2}</p>
                             </div>
-                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-xl text-[#9936AF]">
+                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-xl text-[#4a70a8]">
                                 {Icone3 && <Icone3 className={`text-[22px]`} />}
                                 <p className="text-[12px] font-bold">{techno3}</p>
                             </div>
-                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-xl text-[#9936AF]">
+                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-xl text-[#4a70a8]">
                                 {Icone4 && <Icone4 className={`text-[22px]`} />}
                                 <p className="text-[12px] font-bold">{techno4}</p>
                             </div>
@@ -88,13 +88,13 @@ interface detailGauche {
 export function CadreProjetGauche({ image, titre, texte, role, alt, Icone1, techno1, Icone2, techno2, Icone3, techno3, Icone4, techno4 }: detailGauche) {
     return (
         <div className="hidden lg:flex justify-center min-h-screen text-white pt-[2%] mt-[-15%]">
-            <div className=" h-[60vh] w-[60%] bg-mangabe rounded-2xl flex">
+            <div className=" h-[60vh] w-[60%] bg-[#0A0F16] rounded-2xl flex">
                 <div className="w-[65%] order-2">
                     <img src={image} alt={alt} className="rounded-2xl w-full h-[100%]" loading="lazy" />
                 </div>
 
                 <div className=" w-[35%] order-1">
-                    <div className="bg-[#5618B8] flex justify-center bg-opacity-15 p-2 ml-[2vh] w-[10%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
+                    <div className="bg-[#192537] flex justify-center bg-opacity-15 p-2 ml-[2vh] w-[10%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
                         <Tooltip title="Lien GitHub" placement="topRight">
                             <AiFillGithub className="p-[1%]" />
                         </Tooltip>
@@ -106,19 +106,19 @@ export function CadreProjetGauche({ image, titre, texte, role, alt, Icone1, tech
                         <p className="text-[12px] mt-[2%]"><span className="font-bold">Rôle:</span> <span>{role}</span></p>
 
                         <div className="flex mt-[12%] space-x-2">
-                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-xl text-[#9936AF]">
+                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-xl text-[#4a70a8]">
                                 {Icone1 && <Icone1 className={`text-[22px]`} />}
                                 <p className="text-[12px] font-bold">{techno1}</p>
                             </div>
-                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-xl text-[#9936AF]">
+                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-xl text-[#4a70a8]">
                                 {Icone2 && <Icone2 className={`text-[22px]`} />}
                                 <p className="text-[12px] font-bold">{techno2}</p>
                             </div>
-                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-xl text-[#9936AF]">
+                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-xl text-[#4a70a8]">
                                 {Icone3 && <Icone3 className={`text-[22px]`} />}
                                 <p className="text-[12px] font-bold">{techno3}</p>
                             </div>
-                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-xl text-[#9936AF]">
+                            <div className="w-[20%] h-[9vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-xl text-[#4a70a8]">
                                 {Icone4 && <Icone4 className={`text-[22px]`} />}
                                 <p className="text-[12px] font-bold">{techno4}</p>
                             </div>
@@ -151,13 +151,13 @@ interface detailTablette{
 export function CadreTabletteD({ image, titre, texte, role, alt, Icone1, techno1, Icone2, techno2, Icone3, techno3, Icone4, techno4, divClassName }: detailTablette){
     return(
         <div className={`flex justify-center min-h-screen text-white pt-[2%] ${divClassName}`}>
-            <div className=" h-[30vh] w-[80%] bg-mangabe rounded-2xl flex">
+            <div className=" h-[30vh] w-[80%] bg-[#0A0F16] rounded-2xl flex">
                 <div className="w-[65%]">
                     <img src={image} alt={alt} className="rounded-2xl w-full h-[100%]" loading="lazy"/>
                 </div>
 
                 <div className=" w-[35%]">
-                    <div className="bg-[#5618B8] flex justify-center bg-opacity-15 p-2 ml-[80%] w-[15%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
+                    <div className="bg-[#192537] flex justify-center bg-opacity-15 p-2 ml-[80%] w-[15%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
                         <Tooltip title="Lien GitHub" placement="topLeft">
                             <AiFillGithub className="p-[1%]" />
                         </Tooltip>
@@ -169,19 +169,19 @@ export function CadreTabletteD({ image, titre, texte, role, alt, Icone1, techno1
                         <p className="text-[10px] mt-[2%]"><span className="font-bold">Rôle:</span> <span>{role}</span></p>
 
                         <div className="flex mt-[3%] space-x-2">
-                            <div className="w-[20%] h-[4vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-lg text-[#9936AF]">
+                            <div className="w-[20%] h-[4vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-lg text-[#4a70a8]">
                                 {Icone1 && <Icone1 className={`text-[18px]`} />}
                                 <p className="text-[8px] font-bold">{techno1}</p>
                             </div>
-                            <div className="w-[20%] h-[4vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-lg text-[#9936AF]">
+                            <div className="w-[20%] h-[4vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-lg text-[#4a70a8]">
                                 {Icone2 && <Icone2 className={`text-[18px]`} />}
                                 <p className="text-[8px] font-bold">{techno2}</p>
                             </div>
-                            <div className="w-[20%] h-[4vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-lg text-[#9936AF]">
+                            <div className="w-[20%] h-[4vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-lg text-[#4a70a8]">
                                 {Icone3 && <Icone3 className={`text-[18px]`} />}
                                 <p className="text-[8px] font-bold">{techno3}</p>
                             </div>
-                            <div className="w-[20%] h-[4vh] place-content-center place-items-center bg-[#9936AF] bg-opacity-20 rounded-lg text-[#9936AF]">
+                            <div className="w-[20%] h-[4vh] place-content-center place-items-center bg-[#192537] bg-opacity-20 rounded-lg text-[#4a70a8]">
                                 {Icone4 && <Icone4 className={`text-[18px]`} />}
                                 <p className="text-[8px] font-bold">{techno4}</p>
                             </div>
@@ -219,7 +219,7 @@ export function CadreTabletteG({ image, titre, texte, role, alt, Icone1, techno1
                 </div>
 
                 <div className=" w-[35%] order-1">
-                    <div className="bg-[#5618B8] flex justify-center bg-opacity-15 p-2 ml-[1vh] w-[16%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
+                    <div className="bg-[#192537] flex justify-center bg-opacity-15 p-2 ml-[1vh] w-[16%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
                         <Tooltip title="Lien GitHub" placement="topRight">
                             <AiFillGithub className="p-[1%]" />
                         </Tooltip>
@@ -272,14 +272,14 @@ export function CadrePhone({image, titre, texte, role, alt, Icone1, Icone2, Icon
     const [showTech, setShowTech] = useState(false);
 
     return (
-        <div className="bg-mangabe w-[90%] rounded-lg">
+        <div className="bg-[#0A0F16] w-[90%] rounded-lg">
             <div className="flex space-x-2 ml-[10%]">
-                <div onClick={() => setShowTech(true)} className="float-left bg-[#5618B8] text-white flex justify-center bg-opacity-15 p-2 w-[10%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%] ml-[75%]">
+                <div onClick={() => setShowTech(true)} className="float-left bg-[#192537] text-white flex justify-center bg-opacity-15 p-2 w-[10%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%] ml-[75%]">
                     <Tooltip title="Technologies" placement="topLeft">
                         <BiCodeAlt className="" />
                     </Tooltip>
                 </div>
-                <div className="bg-[#5618B8] text-white flex justify-center bg-opacity-15 p-2 w-[10%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
+                <div className="bg-[#192537] text-white flex justify-center bg-opacity-15 p-2 w-[10%] rounded-md cursor-pointer hover:bg-[#5618B8] hover:bg-opacity-30 hover:transition duration-200 mt-[4%]">
                     <Tooltip title="Lien GitHub" placement="topLeft">
                         <AiFillGithub className="p-[1%]" />
                     </Tooltip>

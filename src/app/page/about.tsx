@@ -53,35 +53,35 @@ export function About() {
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.6, delay: 0.6 }}
-                    className="inline-block ml-2 bg-gradient-to-r from-[#ffffff] to-[#9936AF] bg-clip-text text-transparent"
+                    className="inline-block ml-2 bg-gradient-to-r from-[#ffffff] to-[#243c5d] bg-clip-text text-transparent"
                 >
                     du Mickaël
                 </motion.span>
             </p>
             <p className="text-white opacity-70 text-center text-[14px] px-[5%] lg:px-[32%]">Quelques mots pour me présenter et partager mon parcours, mes motivations et ma vision du développement web.</p>
-            <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#9936AF] to-[#fff] mt-[3%] rounded-xl lg:mt-[1%] lg:w-[15vh]"></div>
+            <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#243c5d] to-[#fff] mt-[3%] rounded-xl lg:mt-[1%] lg:w-[15vh]"></div>
 
-            <div className="w-[20vh] h-[20vh] bg-violeta blur-3xl opacity-60 lg:opacity-80 relative z-0 mb-[-30%] lg:mb-[-5%] md:mb-[-22%] animate-pulse"></div>
+            <div className="w-[20vh] h-[20vh] bg-[#1b2c44] blur-3xl opacity-60 lg:opacity-80 relative z-0 mb-[-30%] lg:mb-[-5%] md:mb-[-22%] animate-pulse"></div>
 
             <div className="grid grid-cols-1 px-[5%] lg:grid-cols-2">
                 <div className="w-full space-y-[2%] order-1 lg:order-2">
-                    <div className="h-[10vh] bg-[#1A122E] bg-opacity-30 rounded-lg flex items-center" data-aos="fade-left">
-                        <BsCodeSlash className="bg-violeta text-white p-[4%] text-[50px] ml-[4%] mr-[4%] rounded-lg lg:p-[2%] lg:text-[40px] md:p-[2%]" />
+                    <div className="h-[10vh] bg-[#101925] bg-opacity-30 rounded-lg flex items-center" data-aos="fade-left">
+                        <BsCodeSlash className="bg-[#243c5d] text-white p-[4%] text-[50px] ml-[4%] mr-[4%] rounded-lg lg:p-[2%] lg:text-[40px] md:p-[2%]" />
                         <p className="text-white text-[15px] font-bold ml-[5%] lg:ml-0 md:ml-0 md:text-[16px]">Développeur web Junior</p>
                     </div>
-                    <div className="pb-[8%] bg-[#1A122E] bg-opacity-30 rounded-lg w-full px-[5%] lg:pb-[5%]" data-aos="fade-up">
+                    <div className="pb-[8%] bg-[#101925] bg-opacity-30 rounded-lg w-full px-[5%] lg:pb-[5%]" data-aos="fade-up">
                         <br />
                         <img src="./images/micka.jpg" alt="photo de Mickael" className="object-contain w-[20%] rounded-full mx-auto lg:w-[10%]" />
                         <p className="text-center mt-[2%] text-white font-bold text-[14px] opacity-95">Rakotomampiandry Mickaël</p>
                         <p className="mt-[2%] text-white text-center text-[12px] px-[3%] lg:mt-[1%] lg:px-[10%] md:px-[10%] md:mt-[2%]">Je suis un développeur web passionné par la création d’applications modernes, performantes et faciles à utiliser.</p>
                         <div className="bg-white w-full h-[6vh] mt-[10%] rounded-lg flex items-center lg:mt-[4%] lg:w-[40%] lg:mx-auto md:mt-[5%] md:w-[50%] md:h-[5vh] md:mx-auto">
                             <p className="font-bold ml-[15%] text-[14px] opacity-70 lg:ml-[10%]">Plus d'information</p>
-                            <Button className="bg-violeta left-[20%] lg:left-[15%]">
+                            <Button className="bg-[#243c5d] left-[20%] lg:left-[15%]">
                                 <AiOutlineArrowRight className="text-white py-[2%]" />
                             </Button>
                         </div>
                     </div>
-                    <div className="lg:hidden bg-[#1A122E] bg-opacity-30 rounded-lg px-[5%] py-[5%]">
+                    <div className="lg:hidden bg-[#101925] bg-opacity-30 rounded-lg px-[5%] py-[5%]">
                         <p className="text-white text-[14px] text-justify leading-relaxed">
                             <Typewriter
                                 words={[
@@ -110,7 +110,7 @@ export function About() {
                 </div>
 
                 <motion.div
-                    className="hidden md:hidden lg:block h-[50vh] bg-[#1A122E] bg-opacity-30 
+                    className="hidden md:hidden lg:block h-[50vh] bg-[#101925] bg-opacity-30 
                  lg:mr-[3%] rounded-lg order-2 lg:order-1 px-[6%] py-[10%]"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
