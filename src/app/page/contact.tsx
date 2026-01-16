@@ -6,9 +6,38 @@ import React from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { Link as Linke } from "react-router-dom";
 import { Button, Input } from "antd";
-import TextArea from "antd/es/input/TextArea";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+const { TextArea } = Input;
 
 export default function Contact() {
+    // Envoye email
+    const formRef = useRef<HTMLFormElement | null>(null);
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (!formRef.current) return;
+
+        emailjs
+            .sendForm(
+                "service_vcm7j79",
+                "template_j1z11kp",
+                formRef.current,
+                "WKpuVKejfqtyMShXj"
+            )
+            .then(() => {
+                alert("Message envoyé avec succès 🚀");
+                formRef.current?.reset();
+            })
+            .catch((error) => {
+                alert("Erreur lors de l'envoi ❌");
+                console.error(error);
+            });
+    };
+
+
     return (
         <div className="relative w-full h-screen overflow-hidden">
             {/* Vidéo de fond */}
@@ -51,16 +80,33 @@ export default function Contact() {
                         <p className="text-white pt-[5%] font-bold text-[18px]">Message direct vers mon Email</p>
                         <p className="text-white opacity-80 text-[12px]">Envoyer un message direct vers mon Email</p>
                         <div className="w-[7vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#243c5d] to-[#fff] mt-[3%] mb-[5%] rounded-xl md:mt-[2%] md:mb-[2%] lg:mt-[1%]"></div>
+                        <form ref={formRef} onSubmit={sendEmail} >
+                            <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Nom</p>
+                            <Input className="w-[80%] h-[6vh]"
+                                type="text"
+                                name="from_name"
+                                required
+                                placeholder="votre nom"
+                            />
+                            <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Email</p>
+                            <Input className="w-[80%] h-[6vh]"
+                                type="Email"
+                                placeholder="exemple@gmail.com"
+                                name="reply_to"
+                                required
+                            />
+                            <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Message</p>
+                            <TextArea className="w-[80%] h-[5vh]"
+                                rows={5}
+                                name="message"
+                                placeholder="Votre message..."
+                                required
+                            />
+                            <Button htmlType="submit" className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[10%]">
+                                Envoyer
+                            </Button>
+                        </form>
 
-                        <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Nom</p>
-                        <Input className="w-[80%] h-[6vh]" type="text" />
-                        <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Email</p>
-                        <Input className="w-[80%] h-[6vh]" type="Email" placeholder="exemple@gmail.com" />
-                        <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Message</p>
-                        <TextArea className="w-[80%] h-[5vh]" rows={5} />
-                        <Button className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[10%]">
-                            Envoyer
-                        </Button>
                     </div>
 
                     <div className="flex items-center justify-center mt-[5%] space-x-[4%] text-white text-[35px] cursor-pointer">
@@ -109,15 +155,33 @@ export default function Contact() {
                         <p className="text-white opacity-80 text-[12px]">Envoyer un message direct vers mon Email</p>
                         <div className="w-[7vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#243c5d] to-[#fff] mt-[3%] mb-[2%] rounded-xl"></div>
 
-                        <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[8%] mb-[2%]">Nom</p>
-                        <Input className="w-[80%] h-[5vh]" type="text" />
-                        <p className="text-white text-start ml-[10%] font-bold mt-[2%] mb-[2%] text-[12px]">Email</p>
-                        <Input className="w-[80%] h-[5vh]" type="Email" placeholder="exemple@gmail.com" />
-                        <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[2%] mb-[2%]">Message</p>
-                        <TextArea className="w-[80%] h-[5vh]" rows={5} />
-                        <Button className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[8%] py-[2%]">
-                            Envoyer
-                        </Button>
+                        <form ref={formRef} onSubmit={sendEmail}>
+                            <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[8%] mb-[2%]">Nom</p>
+                            <Input className="w-[80%] h-[5vh]" 
+                                type="text"
+                                name="from_name"
+                                required
+                                placeholder="votre nom"
+                             />
+
+                            <p className="text-white text-start ml-[10%] font-bold mt-[2%] mb-[2%] text-[12px]">Email</p>
+                            <Input className="w-[80%] h-[5vh]" 
+                                type="Email" 
+                                placeholder="exemple@gmail.com" 
+                                name="reply_to"
+                                required
+                            />
+                            <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[2%] mb-[2%]">Message</p>
+                            <TextArea className="w-[80%] h-[5vh]" 
+                                rows={5}
+                                name="message"
+                                placeholder="Votre message..."
+                                required
+                            />
+                            <Button htmlType="submit" className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[8%] py-[2%]">
+                                Envoyer
+                            </Button>
+                        </form>
                     </div>
                 </div>
 
@@ -129,12 +193,29 @@ export default function Contact() {
                         <div className="w-[7vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#243c5d] to-[#fff] mt-[3%] mb-[2%] rounded-xl"></div>
 
                         <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[8%] mb-[2%]">Nom</p>
-                        <Input className="w-[80%] h-[5vh]" type="text" />
+                        <Input className="w-[80%] h-[5vh]"
+                            type="text"
+                            name="from_name"
+                            required
+                            placeholder="votre nom"
+                        />
+
                         <p className="text-white text-start ml-[10%] font-bold mt-[2%] mb-[2%] text-[12px]">Email</p>
-                        <Input className="w-[80%] h-[5vh]" type="Email" placeholder="exemple@gmail.com" />
+                        <Input className="w-[80%] h-[5vh]" 
+                            type="Email"
+                            placeholder="exemple@gmail.com" 
+                            name="reply_to"
+                            required
+                        />
+
                         <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[2%] mb-[2%]">Message</p>
-                        <TextArea className="w-[80%] h-[5vh]" rows={5} />
-                        <Button className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[8%] py-[2%]">
+                        <TextArea className="w-[80%] h-[5vh]" 
+                            rows={5} 
+                            name="message"
+                            placeholder="Votre message..."
+                            required
+                        />
+                        <Button htmlType="submit" className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[8%] py-[2%]">
                             Envoyer
                         </Button>
                     </div>
