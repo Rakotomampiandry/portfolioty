@@ -19,7 +19,7 @@ export default function Home() {
                 <div className="lg:text-left md:text-left">
                     <p className="text-white font-bold text-[30px]">Rakotomampiandry <span className="bg-gradient-to-r from-[#ffff] to-[#9936AF] bg-clip-text text-transparent">Mickaël</span></p>
                     <p className="text-white opacity-80 font-bold text-[25px]">Développeur et designer web</p>
-                    <p className="text-white text-center text-[15px] px-[10%] mt-[5%] md:text-[15px] md:px-0 md:pr-[35%] md:text-left md:mt-[2%] lg:text-[15px] lg:pr-[60%] lg:mt-[1%]">Développeur et designer, j’allie esthétique, stratégie et technologie pour donner vie à des projets modernes.</p>
+                    <p className="text-white text-center text-[15px] px-[10%] mt-[5%] md:text-[15px] md:px-0 md:pr-[35%] md:text-left md:mt-[2%] lg:text-[15px] lg:pr-[60%] lg:mt-[1%]">Développeur web, j’allie esthétique, stratégie et technologie pour donner vie à des projets modernes.</p>
                 </div>
 
                 <div className="mt-[15%] md:mt-[5%] lg:mt-[2%]">
