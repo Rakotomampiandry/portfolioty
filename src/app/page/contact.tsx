@@ -55,7 +55,7 @@ export default function Contact() {
                         <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Nom</p>
                         <Input className="w-[80%] h-[6vh]" type="text" />
                         <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Email</p>
-                        <Input className="w-[80%] h-[6vh]" type="Email" placeholder="exemple@gmail.com"/>
+                        <Input className="w-[80%] h-[6vh]" type="Email" placeholder="exemple@gmail.com" />
                         <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Message</p>
                         <TextArea className="w-[80%] h-[5vh]" rows={5} />
                         <Button className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[10%]">
@@ -64,10 +64,18 @@ export default function Contact() {
                     </div>
 
                     <div className="flex items-center justify-center mt-[5%] space-x-[4%] text-white text-[35px] cursor-pointer">
-                        <FiFacebook className="border-2 border-white rounded-xl p-[1%] hover:scale-110 transition-all duration-200" />
-                        <FiLinkedin className="border-2 border-white rounded-xl p-[1%] hover:scale-110 transition-all duration-200" />
-                        <BsWhatsapp className="border-2 border-white rounded-xl p-[1%] hover:scale-110 transition-all duration-200" />
-                        <TbBrandGmail className="border-2 border-white rounded-xl p-[1%] hover:scale-110 transition-all duration-200" />
+                        <a href="https://www.facebook.com/micka.hasniaina" target="_blank" rel="noopener noreferrer">
+                            <FiFacebook className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/mickael-rakotomampiandry-888320312" target="_blank" rel="noopener noreferrer">
+                            <FiLinkedin className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                        </a>
+                        <a href="https://wa.me/+261348984604" target="_blank" rel="noopener noreferrer">
+                            <BsWhatsapp className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                        </a>
+                        <a href="mailto:rakotomampiandry@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <TbBrandGmail className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                        </a>
                     </div>
                 </div>
 
@@ -79,11 +87,19 @@ export default function Contact() {
 
                         <div className="text-white mt-[8%]">
                             <p className="text-[18px] font-bold">Réseaux sociaux</p>
-                            <div className="flex justify-center ml-[-70%] mt-[1%] space-x-[1%] text-white text-[45px] cursor-pointer">
-                                <FiFacebook className="border-2 border-white rounded-2xl p-[1%] hover:scale-110 transition-all duration-200" />
-                                <FiLinkedin className="border-2 border-white rounded-2xl p-[1%] hover:scale-110 transition-all duration-200" />
-                                <BsWhatsapp className="border-2 border-white rounded-2xl p-[1%] hover:scale-110 transition-all duration-200" />
-                                <TbBrandGmail className="border-2 border-white rounded-2xl p-[1%] hover:scale-110 transition-all duration-200" />
+                            <div className="flex justify-center ml-[-75%] mt-[1%] space-x-[1%] text-white text-[35px] cursor-pointer">
+                                <a href="https://www.facebook.com/micka.hasniaina" target="_blank" rel="noopener noreferrer">
+                                    <FiFacebook className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/mickael-rakotomampiandry-888320312" target="_blank" rel="noopener noreferrer">
+                                    <FiLinkedin className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                                </a>
+                                <a href="https://wa.me/+261348984604" target="_blank" rel="noopener noreferrer">
+                                    <BsWhatsapp className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                                </a>
+                                <a href="mailto:rakotomampiandry@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <TbBrandGmail className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -96,7 +112,7 @@ export default function Contact() {
                         <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[8%] mb-[2%]">Nom</p>
                         <Input className="w-[80%] h-[5vh]" type="text" />
                         <p className="text-white text-start ml-[10%] font-bold mt-[2%] mb-[2%] text-[12px]">Email</p>
-                        <Input className="w-[80%] h-[5vh]" type="Email" placeholder="exemple@gmail.com"/>
+                        <Input className="w-[80%] h-[5vh]" type="Email" placeholder="exemple@gmail.com" />
                         <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[2%] mb-[2%]">Message</p>
                         <TextArea className="w-[80%] h-[5vh]" rows={5} />
                         <Button className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[8%] py-[2%]">
@@ -115,7 +131,7 @@ export default function Contact() {
                         <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[8%] mb-[2%]">Nom</p>
                         <Input className="w-[80%] h-[5vh]" type="text" />
                         <p className="text-white text-start ml-[10%] font-bold mt-[2%] mb-[2%] text-[12px]">Email</p>
-                        <Input className="w-[80%] h-[5vh]" type="Email" placeholder="exemple@gmail.com"/>
+                        <Input className="w-[80%] h-[5vh]" type="Email" placeholder="exemple@gmail.com" />
                         <p className="text-white text-start ml-[10%] text-[12px] font-bold mt-[2%] mb-[2%]">Message</p>
                         <TextArea className="w-[80%] h-[5vh]" rows={5} />
                         <Button className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[8%] py-[2%]">
@@ -130,10 +146,18 @@ export default function Contact() {
                         <div className="text-white mt-[5%]">
                             <p className="text-[18px] font-bold">Réseaux sociaux</p>
                             <div className="flex justify-center ml-[-70%] mt-[1%] space-x-[1%] text-white text-[45px] cursor-pointer">
-                                <FiFacebook className="border-2 border-white rounded-2xl p-[1%] hover:scale-110 transition-all duration-200" />
-                                <FiLinkedin className="border-2 border-white rounded-2xl p-[1%] hover:scale-110 transition-all duration-200" />
-                                <BsWhatsapp className="border-2 border-white rounded-2xl p-[1%] hover:scale-110 transition-all duration-200" />
-                                <TbBrandGmail className="border-2 border-white rounded-2xl p-[1%] hover:scale-110 transition-all duration-200" />
+                                <a href="https://www.facebook.com/micka.hasniaina" target="_blank" rel="noopener noreferrer">
+                                    <FiFacebook className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/mickael-rakotomampiandry-888320312" target="_blank" rel="noopener noreferrer">
+                                    <FiLinkedin className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                                </a>
+                                <a href="https://wa.me/+261348984604" target="_blank" rel="noopener noreferrer">
+                                    <BsWhatsapp className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                                </a>
+                                <a href="mailto:rakotomampiandry@gmail.com" target="_blank" rel="noopener noreferrer">
+                                    <TbBrandGmail className="border-2 border-white rounded-xl p-[15%] hover:scale-110 transition-all duration-200" />
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -100,11 +100,22 @@ export default function Page() {
               </Button>
 
               <div className="flex justify-center space-x-2 mt-[8%] text-[25px] lg:mt-[3%] lg:text-[30px] cursor-pointer md:mt-[5%] opacity-80">
-                <FiFacebook className="hover:scale-125 hover:text-blue-600 duration-200 transition-all" />
-                <FiLinkedin className="hover:scale-125 hover:text-sky-400 duration-200 transition-all" />
-                <FaWhatsapp className="hover:scale-125 hover:text-green-500 duration-200 transition-all" />
-                <TbBrandGmail className="hover:scale-125 hover:text-red-500 duration-200 transition-all" />
-                <BsGithub className="hover:scale-125 hover:text-gray-600 duration-200 transition-all" />
+                <a href="https://www.facebook.com/micka.hasniaina" target="_blank" rel="noopener noreferrer">
+                  <FiFacebook className="hover:scale-125 hover:text-blue-600 duration-200 transition-all" />
+                </a>
+
+                <a href="https://www.linkedin.com/in/mickael-rakotomampiandry-888320312" target="_blank" rel="noopener noreferrer">
+                  <FiLinkedin className="hover:scale-125 hover:text-sky-400 duration-200 transition-all" />
+                </a>
+                <a href="https://wa.me/+261348984604" target="_blank" rel="noopener noreferrer">
+                  <FaWhatsapp className="hover:scale-125 hover:text-green-500 duration-200 transition-all" />
+                </a>
+                <a href="mailto:rakotomampiandry@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <TbBrandGmail className="hover:scale-125 hover:text-red-500 duration-200 transition-all" />
+                </a>
+                <a href="https://github.com/rakotomampiandry" target="_blank" rel="noopener noreferrer">
+                  <BsGithub className="hover:scale-125 hover:text-gray-600 duration-200 transition-all" />
+                </a>
               </div>
 
               <div className="flex justify-center items-center h-full mt-[10%] lg:mt-[5%]">
