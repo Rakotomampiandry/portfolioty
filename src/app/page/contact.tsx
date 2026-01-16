@@ -53,11 +53,11 @@ export default function Contact() {
                         <div className="w-[7vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#243c5d] to-[#fff] mt-[3%] mb-[5%] rounded-xl md:mt-[2%] md:mb-[2%] lg:mt-[1%]"></div>
 
                         <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Nom</p>
-                        <Input className="w-[80%]" type="text"/>
+                        <Input className="w-[80%] h-[6vh]" type="text"/>
                         <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Email</p>
-                        <Input className="w-[80%]" type="Email"/>
+                        <Input className="w-[80%] h-[6vh]" type="Email"/>
                         <p className="text-white text-start ml-[9%] font-bold mt-[8%] mb-[2%]">Message</p>
-                        <TextArea className="w-[80%]"/>
+                        <TextArea className="w-[80%] h-[5vh]" rows={5} />
                         <Button className="bg-black border-2 border-white rounded-xl text-white w-[80%] mt-[10%]">
                             Envoyer
                         </Button>
