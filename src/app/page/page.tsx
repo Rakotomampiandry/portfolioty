@@ -58,7 +58,9 @@ export default function Page() {
     return () => observer.disconnect();
   }, []);
 
-  // Animation texte
+  // video
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [ready, setReady] = useState<boolean>(false);
 
   return (
     <div className="">
@@ -68,12 +70,17 @@ export default function Page() {
         <Section id="home" className="relative w-full h-screen overflow-hidden">
           {/* Vidéo de fond */}
           <video
-            className="absolute top-0 left-0 w-full h-full object-cover "
+            ref={videoRef}
+            onCanPlayThrough={() => setReady(true)}
+            className={`absolute top-0 left-0 w-full h-full object-cover
+            transition-opacity duration-500
+            ${ready ? "opacity-100" : "opacity-0"}`}
             autoPlay
             preload="auto"
             loop
             muted
             playsInline
+            poster="/video-poster.jpg"
           >
             <source src="./videos/fond2.mp4" type="video/mp4" />
           </video>
