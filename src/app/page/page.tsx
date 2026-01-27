@@ -70,11 +70,9 @@ export default function Page() {
         <Section id="home" className="relative w-full h-screen overflow-hidden">
           {/* Vidéo de fond */}
           <video
+            className="absolute top-0 left-0 w-full h-full object-cover "
             ref={videoRef}
             onCanPlayThrough={() => setReady(true)}
-            className={`absolute top-0 left-0 w-full h-full object-cover
-            transition-opacity duration-500
-            ${ready ? "opacity-100" : "opacity-0"}`}
             autoPlay
             preload="auto"
             loop
