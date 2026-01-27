@@ -13,6 +13,7 @@ import { About } from "./about";
 import { Tech } from "./Tech";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "antd/es/typography/Link";
+import gsap from "gsap";
 
 const Section = ({ id, children, className = '' }: {
   id: string;
@@ -57,8 +58,7 @@ export default function Page() {
     return () => observer.disconnect();
   }, []);
 
-  // Modal
-  const [open, setOpen] = useState(false);
+  // Animation texte
 
   return (
     <div className="">
@@ -83,14 +83,14 @@ export default function Page() {
           {/* Contenu au-dessus */}
           <div className="relative z-10 h-full flex items-center justify-center text-white">
             <div className="grid justify-center text-center">
-              <p className="font-bold text-[12px]"> Développeur web Junior</p>
+              <p className="font-bold text-[12px]" data-aos="fade-down"> Développeur web Junior</p>
               <h1 className="text-[25px] lg:text-[40px] font-extrabold tracking-widest text-transparent px-[10%] lg:px-0 md:px-0 hover:text-white transition-all duration-300 cursor-pointer md:text-[25px]"
-                style={{ WebkitTextStroke: "1px #ffffff" }}
+                style={{ WebkitTextStroke: "1px #ffffff" }}  data-aos="fade-left"
               >
-                RAKOTOMAMPIANDRY <span className="tracking-normal">Mickaël</span>
+                <span>RAKOTOMAMPIANDRY</span> <span className="tracking-normal">Mickaël</span>
               </h1>
 
-              <Button className="bg-gradient-to-r from-[#0A0F16] to-[#4A2E1A] rounded-2xl text-white font-bold w-[60%] py-[5%] mt-[5%] mx-auto lg:mt-[2%] lg:w-[35%] lg:mb-[2%] lg:py-[3%]">
+              <Button className="bg-gradient-to-r from-[#0A0F16] to-[#4A2E1A] rounded-2xl text-white font-bold w-[60%] py-[5%] mt-[5%] mx-auto lg:mt-[2%] lg:w-[35%] lg:mb-[2%] lg:py-[3%]"  data-aos="fade-right">
                 <Link
                   href="/web.pdf"
                   download
@@ -101,20 +101,20 @@ export default function Page() {
 
               <div className="flex justify-center space-x-2 mt-[8%] text-[25px] lg:mt-[3%] lg:text-[30px] cursor-pointer md:mt-[5%] opacity-80">
                 <a href="https://www.facebook.com/micka.hasniaina" target="_blank" rel="noopener noreferrer">
-                  <FiFacebook className="hover:scale-125 hover:text-blue-600 duration-200 transition-all" />
+                  <FiFacebook className="hover:scale-125 hover:text-blue-600 duration-200 transition-all"  data-aos="fade-right"/>
                 </a>
 
                 <a href="https://www.linkedin.com/in/mickael-rakotomampiandry-888320312" target="_blank" rel="noopener noreferrer">
-                  <FiLinkedin className="hover:scale-125 hover:text-sky-400 duration-200 transition-all" />
+                  <FiLinkedin className="hover:scale-125 hover:text-sky-400 duration-200 transition-all"  data-aos="fade-up"/>
                 </a>
                 <a href="https://wa.me/+261348984604" target="_blank" rel="noopener noreferrer">
-                  <FaWhatsapp className="hover:scale-125 hover:text-green-500 duration-200 transition-all" />
+                  <FaWhatsapp className="hover:scale-125 hover:text-green-500 duration-200 transition-all" data-aos="fade-up"/>
                 </a>
                 <a href="mailto:rakotomampiandry@gmail.com" target="_blank" rel="noopener noreferrer">
-                  <TbBrandGmail className="hover:scale-125 hover:text-red-500 duration-200 transition-all" />
+                  <TbBrandGmail className="hover:scale-125 hover:text-red-500 duration-200 transition-all" data-aos="fade-up"/>
                 </a>
                 <a href="https://github.com/rakotomampiandry" target="_blank" rel="noopener noreferrer">
-                  <BsGithub className="hover:scale-125 hover:text-gray-600 duration-200 transition-all" />
+                  <BsGithub className="hover:scale-125 hover:text-gray-600 duration-200 transition-all"  data-aos="fade-left"/>
                 </a>
               </div>
 

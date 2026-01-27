@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div className="w-[10vh] h-[2px] bg-white mx-auto bg-gradient-to-r from-[#0A0F16] to-[#fff] mt-[10%] mb-[2%] rounded-xl md:mt-[5%] md:mb-[1%] md:w-[8vh] lg:mt-[3%]"></div>
 
-        <p className="text-[10px] text-center text-white">© 2025 Portfolio de Rakotomampiandry Mickael</p>
+        <p className="text-[10px] text-center text-white">© 2026 Portfolio de Rakotomampiandry Mickael</p>
       </div>
     </footer>
   );
